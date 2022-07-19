@@ -1,4 +1,13 @@
 site_name: efxdev-docs
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Laurent Marques
+site_description: >-
+  Efxdev docs, exercices, tips on web technologies and tools
+# Repository
+repo_name: electroheadfx/efxdev-docs
+repo_url: https://github.com/electroheadfx/efxdev-docs
+
+copyright: Copyright &copy; 2022 - efxdesign / Laurent Marques
 
 plugins:
   - glightbox
@@ -103,8 +112,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/grid-cards.css
-
-copyright: Copyright &copy; 2022 - efxdesign / Laurent Marques
 
 extra:
   social:
