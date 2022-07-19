@@ -1,182 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/toto/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/async-await/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/callback/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/class/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/closures/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/currying/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/es6-utilities/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/generator/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/iterator/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/map/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/promise/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/reduce-cases/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/set/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/setinterval/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/this/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/timeout/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/advanced/useRef%20or%20useState/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/css/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/es6/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/events/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/html/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/js-basics/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/js-loop/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/node/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/basis/services/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tips/css-reset/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tips/css/shruti-balasa/css-animation-line-hover/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tips/css/shruti-balasa/display-contents-in-CSS-rule/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/docusaurus-create/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/git/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/mkdocs%20material/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/Docker/docker-exo/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/Docker/docker-exo2/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
+         <loc>https://squidfunk.github.io/mkdocs-material/pages/tools/Docker/docker-start/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
