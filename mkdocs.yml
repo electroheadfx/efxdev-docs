@@ -62,7 +62,7 @@ theme:
     - content.code.annotate
     - navigation.tabs
     # - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - navigation.top
     - header.autohide
     - navigation.indexes
@@ -150,23 +150,24 @@ nav:
     - Node: pages/basis/node.md
     - Services: pages/basis/services.md
   - Advanced:
-    - pages/advanced/es6-utilities.md
-    - Javascript:
-      - ES6 Utilities: pages/advanced/es6-utilities.md
-      - Reduce Practices: pages/advanced/reduce-cases.md
-      - Async / Await: pages/advanced/async-await.md
-      - callback: pages/advanced/callback.md
-      - Class: pages/advanced/class.md
-      - Closures: pages/advanced/closures.md
-      - Function currying: pages/advanced/currying.md
-      - Generator: pages/advanced/generator.md
-      - Iterator: pages/advanced/iterator.md
-      - Map: pages/advanced/map.md
-      - Promise: pages/advanced/promise.md
-      - Set: pages/advanced/set.md
-      - Interval: pages/advanced/setinterval.md
-      - This: pages/advanced/this.md
-      - Time Out: pages/advanced/timeout.md
+    - pages/advanced/index.md
+    - JS:
+      - pages/advanced/js/index.md
+      - ES6 Utilities: pages/advanced/js/es6-utilities.md
+      - Reduce Practices: pages/advanced/js/reduce-cases.md
+      - Async / Await: pages/advanced/js/async-await.md
+      - callback: pages/advanced/js/callback.md
+      - Class: pages/advanced/js/class.md
+      - Closures: pages/advanced/js/closures.md
+      - Function currying: pages/advanced/js/currying.md
+      - Generator: pages/advanced/js/generator.md
+      - Iterator: pages/advanced/js/iterator.md
+      - Map: pages/advanced/js/map.md
+      - Promise: pages/advanced/js/promise.md
+      - Set: pages/advanced/js/set.md
+      - Interval: pages/advanced/js/setinterval.md
+      - This: pages/advanced/js/this.md
+      - Time Out: pages/advanced/js/timeout.md
 
 
   # - Home: index.md

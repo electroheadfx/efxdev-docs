@@ -1,8 +1,6 @@
 ## Calculate price basket
 
-### Initial object
-
-```js
+```js title="Initial object"
 const caddie = [
   { book: 1, price: 19.99 },
   { beer: 6, price: 4.5 },
@@ -10,18 +8,14 @@ const caddie = [
 ];
 ```
 
-### Calculate the caddie price
-
-```js
+```js title="Calculate the caddie price"
 const price = caddie.reduce((acc, curr) => acc + curr.price, 0);
 console.log(price.toFixed(2)); // 25.69
 ```
 
 ## Reformat data in object
 
-### Initial object
-
-```js
+```js title="Initial object"
 const musicians = [
   {
     id: 12345,
@@ -38,9 +32,11 @@ const musicians = [
   { id: 87, firstName: "Mitch", lastName: "Micthele", instrument: "Drums" }
 ];
 ```
-### Easy to call the date by the ID in a object (instead of search)
+!!! tip
 
-```js
+    Its Easier to call the date by the ID in a object (instead of search) :
+
+```js title="Get musicians list"
 const musiciansList = musicians.reduce((acc, curr) => {
   const { id, ...othersProps } = curr;
   acc[id] = othersProps;
@@ -52,9 +48,7 @@ console.log(musiciansList[87]); // return Micth object
 
 ## Calculate the number of pizzas
 
-### Initial object
-
-```js
+```js title="Initial object"
 const pizzas = [
   { userName: "Bob", pizzaName: "Marguarita", qty: 1 },
   { userName: "Sam", pizzaName: "Veggie", qty: 2 },
@@ -64,8 +58,9 @@ const pizzas = [
   { userName: "Morley", pizzaName: "Marguarita", qty: 5 }
 ];
 ```
+!!! tip
 
-### Give the number of pizza per type
+    Give the number of pizza per type :
 
 ```js
 const pizzaPerType = pizzas.reduce((acc, curr) => {
@@ -80,3 +75,7 @@ const pizzaPerType = pizzas.reduce((acc, curr) => {
 console.log(pizzaPerType);
 // Output : { Marguarita: 6, Veggie: 2, Regina: 4, Calzone: 1 }
 ```
+
+## Other resources
+
+[Reduce basis](../es6-utilities/reduce.md){ .md-button .md-button--outline }

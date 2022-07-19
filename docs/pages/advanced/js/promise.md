@@ -1,28 +1,28 @@
 # Promise intro
 
-![Promise 1](./images/js/promise/promise.png)
+![Promise 1](./images/promise/promise.png)
 
 ## Promise then() function
 
-![Promise 2](./images/js/promise/promise-2.png)
+![Promise 2](./images/promise/promise-2.png)
 
 ## Chaining Promise
 
-![Promise chaining](./images/js/promise/primise-chaining.png)
+![Promise chaining](./images/promise/primise-chaining.png)
 
 ## Promise Static methods
 
 ### Promise All
 
-![Promise All](./images/js/promise/promise-all.png)
+![Promise All](./images/promise/promise-all.png)
 
 ### Promise Race
 
-![Promise Race](./images/js/promise/promise-race.png)
+![Promise Race](./images/promise/promise-race.png)
 
 ### Promise allSettle
 
-![Promise allSettle](./images/js/promise/promise-allSettle.png)
+![Promise allSettle](./images/promise/promise-allSettle.png)
 
 ## Bonus
 

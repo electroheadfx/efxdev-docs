@@ -1,0 +1,1 @@
+![Function currying](./images/function-currying.png)

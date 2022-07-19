@@ -1,0 +1,12 @@
+.scale3 {
+  transform: scale(3);
+}
+
+.whirl {
+  margin-top: -40px!important;
+}
+
+.push10 {
+  margin-left: 25px;
+  margin-top: 10px;
+}
