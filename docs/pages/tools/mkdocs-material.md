@@ -19,6 +19,17 @@ theme:
 
 > Run or deploy on Github
 
+```yml
+site_name: <your_site_name>
+site_url: https://<account>.github.io/<your_site_name>
+site_author: your name
+site_description: >-
+  Efxdev docs, exercices, tips on web technologies and tools
+# Repository
+repo_name: <account>/<your_site_name>
+repo_url: https://github.com/<account>/<your_site_name>
+```
+
 ```bash
 # Run in local
 mkdocs serve
@@ -98,8 +109,6 @@ mkdocs serve --watch-theme
 
 [Customization - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/customization/)
 
-
-
 # Installing the dev
 
 ```bash
@@ -129,5 +138,3 @@ mkdocs serve --watch-theme
 ```
 
 [Doc Installing dev of Material for MkDocs](https://squidfunk.github.io/mkdocs-material/customization/#theme-development)
-
-
