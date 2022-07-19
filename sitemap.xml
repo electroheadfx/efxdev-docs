@@ -16,82 +16,87 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/async-await/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/callback/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/async-await/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/class/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/callback/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/closures/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/class/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/currying/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/closures/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/es6-utilities/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/currying/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/generator/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/es6-utilities/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/iterator/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/generator/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/map/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/iterator/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/promise/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/map/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/reduce-cases/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/promise/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/set/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/reduce-cases/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/setinterval/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/set/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/this/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/setinterval/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/timeout/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/this/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/useRef%20or%20useState/</loc>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/timeout/</loc>
+         <lastmod>2022-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/useRef-or-useState/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
