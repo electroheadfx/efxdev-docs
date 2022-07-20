@@ -1,10 +1,81 @@
 # Promise intro
 
-![Promise 1](./images/promise/promise.png)
+> How to execute callback functions based on the status change?
+
+```js title="Promise Resolve scenario"
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    // Food truck found
+    // Change status from ‘pending’ to 'fulfilled'
+    resolve("Bringing tacos")
+  }, 5000);
+});
+```
+
+```js title="Promise Reject scenario"
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    // Food truck not found
+    // Change status from ‘pending’ to 'rejected'
+    reject('Not bringing tacos. Food truck not there.');
+  }, 5000);
+});
+```
+
+```js title="Success and failure callbacks"
+
+const onFullfillment = (result) => {
+  // resolve was called
+  console. log(result);
+  console.log('Set up the table to eat tacos');
+}
+
+const onRejection = (error) => {
+  // reject was called
+  console.log(error);
+  console.log('Start cooking pasta');
+}
+
+promise1.then(onFullfillment);
+promise2.catch(onRejection);
+```
+
+```js title="console log result"
+'Bringing tacos'
+'Set up the table to eat tacos'
+-------------------------------
+'Cannot bring tacos'
+'Start cooking pasta'
+```
 
 ## Promise then() function
 
-![Promise 2](./images/promise/promise-2.png)
+### Version 1
+
+* Encouraged approach
+* Even if your onFulfillment callback throws an exception, it is caught and then you can handle that exception gracefully
+
+```js title="then() and catch() functions"
+const promise = new Promise((resolve, reject) => {
+  resolve() or reject()
+});
+
+promise.then(onFulfillment);
+promise.catch(onRejection);
+```
+
+### Version 2
+
+* onRejection callback handles error from only the Promise.
+* If your callback functions itself throws an error or exception, there is no code to handle that.
+
+```js title="then() function"
+const promise = new Promise((resolve, reject) => {
+  resolve() or reject()
+});
+
+promise.then(onFulfillment, onRejection)
+```
 
 ## Chaining Promise
 
