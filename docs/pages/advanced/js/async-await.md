@@ -84,13 +84,111 @@ sequentialStart();
 
 ## Parrallel execution
 
-![asynch-await-parrallel-exec.png](./images/async-await/asynch-await-parrallel-exec.png)
+```js title="resolveHello fn"
+function resolveHello() {
+  return new Promise(resolve => { 
+    setTimeout(() => {
+      resolve('Hello');
+    }, 2000);
+  });
+}
+```
 
+```js title="resolveWorld fn"
+function resolveWorld() {
+  return new Promise(resolve => {
+    setTimeout(function () {
+      resolve('World');
+    }, 1000)
+  });
+}
+```
+
+```js title="parallel function"
+function parallel() {
+  Promise.all([
+    (async () => console.log(await resolveHello()))(), // Total time taken = 2 seconds
+    (async () => console.log(await resolveWorld()))(), // Total time taken = 1 seconds
+  ]);
+}
+parallel();
+
+// Logs 'World' in first then: 'Hello'
+// Total time taken : 2 secs
+```
+
+```js title="parallel function with await"
+async function parallel() {
+  await Promise.all([
+    (async () => console.log(await resolveHello()))(), // Total time taken = 2 seconds
+    (async () => console.log(await resolveWorld()))(), // Total time taken = 1 seconds
+  ]);
+  console.log('Finally'); // Logged after World Hello
+}
+
+parallel();
+// Logs 'World' in first then: 'Hello' 'Finally'
+```
 
 ## Chaining promises vs async-await
 
-![promise vs asynch await.png](./images/async-await/promise-vs-asynch-await.png)
+```js title="with 'then'"
+const promise = fetchCurrentUser( api/user’ )
+promise
+  .then(result => fetchFollowersByUserId(° api/followers/${result.userId} ))
+  .then(result => fetchFollowerInterests( api/interests/${result.followerId} ))
+  .then(result => fetchInterestTags( api/tags/${result.interestId} ))
+  .then(result => fetchTagDescription( api/description/${result.tagId} ))
+  .then(result => console.log('Display the data', result));
+```
 
-## Exo
+```js title="with 'await'"
+async function fetchData() {
+  const user = await fetchCurrentUser('api/user');
+  const followers = await fetchFollowersByUserId(`api/followers/${result.userId}`);
+  const interests = await fetchFollowerInterests(`api/interests/${result.followerId}`)
+  const tags = await fetchInterestTags(`api/tags/${result.interestId}`);
+  const description = await fetchTagDescription(`api/description/${result.tagId}`);
+  console.log('Display the data', result);
+}
+```
 
-![exo.png](./images/async-await/exo.png)
+```js title="with 'await' and 'try..catch'"
+async function fetchData() {
+  try {
+    const user = await fetchCurrentUser('api/user');
+    const followers = await fetchFollowersByUserId(`api/followers/${result.userId}`);
+    const interests = await fetchFollowerInterests(`api/interests/${result.followerId}`)
+    const tags = await fetchInterestTags(`api/tags/${result.interestId}`);
+    const description = await fetchTagDescription(`api/description/${result.tagId}`);
+    console.log('Display the data', result);
+  } catch(e) {
+    console.log('Error', e);
+  }
+```
+
+## Exercise - async await
+
+!!! question
+
+    **Problem statement:**
+
+    * Define a function called sleep which accepts a duration parameter
+    * The sleep function should suspend execution of the function it is invoked in
+
+```js title="Solution"
+function sleep(duration) {
+  return new Promise(resolve => setTimeout(resolve, duration));
+}
+
+async function main() {
+  console.log('Logs immediately');
+  await sleep(2000);
+  console.log('Logs after 2 seconds');
+}
+
+main();
+
+// output: 'Logs immediately'
+// then output: 'Logs after 2 seconds'
+```
