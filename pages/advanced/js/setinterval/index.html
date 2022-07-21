@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#setinterval-intro">
+<a class="md-skip" href="#timeouts-intervals">
           Skip to content
         </a>
 </div>
@@ -323,18 +323,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setinterval-intro">
-    setInterval intro
+<a class="md-nav__link" href="#setinterval">
+    setinterval()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#clear-interval">
-    Clear interval
+<a class="md-nav__link" href="#clearinterval">
+    clearInterval()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setinterval-settimeout">
-    setInterval &amp; setTimeOut
+<a class="md-nav__link" href="#setinterval-settimeout-noteworthy-points">
+    setInterval &amp; setTimeOut: Noteworthy points
   </a>
 </li>
 </ul>
@@ -346,8 +346,13 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../this-examples/">
+        This practices
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../timeout/">
-        Time Out
+        TimeOut
       </a>
 </li>
 </ul>
@@ -371,18 +376,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setinterval-intro">
-    setInterval intro
+<a class="md-nav__link" href="#setinterval">
+    setinterval()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#clear-interval">
-    Clear interval
+<a class="md-nav__link" href="#clearinterval">
+    clearInterval()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setinterval-settimeout">
-    setInterval &amp; setTimeOut
+<a class="md-nav__link" href="#setinterval-settimeout-noteworthy-points">
+    setInterval &amp; setTimeOut: Noteworthy points
   </a>
 </li>
 </ul>
@@ -395,13 +400,80 @@
 <a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/advanced/js/setinterval.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1>Interval</h1>
-<h2 id="setinterval-intro">setInterval intro</h2>
-<p><a class="glightbox" href="../images/setInterval/setInterval-1.png"><img alt="setInterval 1" src="../images/setInterval/setInterval-1.png"/></a></p>
-<h2 id="clear-interval">Clear interval</h2>
-<p><a class="glightbox" href="../images/setInterval/setInterval-2.png"><img alt="setInterval 2" src="../images/setInterval/setInterval-2.png"/></a></p>
-<h2 id="setinterval-settimeout">setInterval &amp; setTimeOut</h2>
-<p><a class="glightbox" href="../images/setInterval/setInterval-and-TimeOut.png"><img alt="setInterval &amp; timeOut" src="../images/setInterval/setInterval-and-TimeOut.png"/></a></p>
+<h1 id="timeouts-intervals">Timeouts &amp; Intervals</h1>
+<h2 id="setinterval">setinterval()</h2>
+<ul>
+<li>The <code>setinterval()</code> function repeatedly runs the same code over and over again at regular intervals.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">,</span><span class="w"> </span><span class="nx">duration</span><span class="p">,</span><span class="w"> </span><span class="nx">param1</span><span class="p">,</span><span class="w"> </span><span class="nx">param2</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span><span class="w"></span>
+</code></pre></div>
+<ul>
+<li>
+<p>The first parameter is the code to execute.</p>
+</li>
+<li>
+<p>*The second parameter is the duration in milliseconds.</p>
+</li>
+<li>
+<p>After the second parameter, you can pass in zero or more values that represent any parameters you want to pass to the function when it is run.</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nx">setInterval</span><span class="p">(</span><span class="nx">greet</span><span class="p">,</span><span class="w"> </span><span class="mf">20090</span><span class="p">)</span><span class="w"></span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">// -&gt; Logs ‘Hello’ every 2 seconds</span><span class="w"></span>
+</code></pre></div>
+<h2 id="clearinterval">clearInterval()</h2>
+<ul>
+<li>Intervals keep running a task forever so you should clear the interval when appropriate.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">intervalId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(</span><span class="nx">greet</span><span class="p">,</span><span class="w"> </span><span class="mf">2000</span><span class="p">,</span><span class="w"> </span><span class="s1">'Vishwas'</span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">intervalId</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h2 id="setinterval-settimeout-noteworthy-points">setInterval &amp; setTimeOut: Noteworthy points</h2>
+<ul>
+<li>It is possible to achieve the same effect as setinterval with a recursive setTimeout.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="nx">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">)</span><span class="w"></span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">run</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">},</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1">// output 'Hello' to endless loop each 100ms</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>
+<p>Duration is guaranteed between executions:</p>
+</li>
+<li>
+<p>Irrespective of how long the code takes to run, the interval will remain the same.</p>
+</li>
+<li>
+<p>Code can take longer to run the the time interval itself? Recursive <code>setTimeout</code>.</p>
+</li>
+<li>
+<p>You can calculate a different delay before running each iteration.</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">setInterval</span><span class="p">(</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="w"> </span><span class="err">‘</span><span class="nx">Hello</span><span class="err">’</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">},</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>
+<p>The duration interval includes the time taken to execute the code you want to run:</p>
+</li>
+<li>
+<p>The code takes 40ms to run, the interval is 60ms</p>
+</li>
+<li>
+<p>The code takes 50ms to run, the interval is 50ms</p>
+</li>
+<li>
+<p>setinterval is always a fixed interval duration</p>
+</li>
+</ol>
 </article>
 </div>
 </div>
