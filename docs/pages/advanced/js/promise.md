@@ -79,21 +79,86 @@ promise.then(onFulfillment, onRejection)
 
 ## Chaining Promise
 
-![Promise chaining](./images/promise/primise-chaining.png)
+```js title="Chaining Promises"
+const promise = new Promise((resolve, reject) => {
+  resolve() or reject();
+}
+
+promise.then(onFulfillment).catch(onRejection);
+```
+
+* Both then and catch methods return promises.
+* `then()` and `catch()` methods can be chained in JavaScript.
 
 ## Promise Static methods
 
-### Promise All
+### Promise.all()
 
-![Promise All](./images/promise/promise-all.png)
+Query multiple APIs and perform some actions but only after all the APIs have finished loading.
 
-### Promise Race
+```js
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, "foo");
+});
 
-![Promise Race](./images/promise/promise-race.png)
+Promise.all([promise1, promise2, promise3])
+  .then((values) => {
+    console.log(values);
+  });
+// output: [ 3, 42, 'foo' ] after 1 sec
+```
 
-### Promise allSettle
+* The Promise.all() method takes an iterable of promises as an input and returns.
+* single Promise that resolves to an array of the results of the input promises.
 
-![Promise allSettle](./images/promise/promise-allSettle.png)
+### Promise.race()
+
+The `Promise.race()` method returns a promise that fulfills or rejects as soon as one of the input promises fulfills or rejects, with the value or reason from that promise.
+
+```js
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'one');
+});
+
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'two');
+});
+
+Promise.race([promise1, promise2]).then((value) => {
+  console. log(value);
+  // both resolve but promise2 is faster
+});
+
+// output: 'two'
+```
+
+### Promise.allSettled()
+
+`Promise.allSettled()` waits for all input promises to complete regardless of whether or not one of them is rejected.
+
+```js
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1908, 'foo');
+});
+
+Promise.allSettled([promise1, promise2, promise3]).
+  then((values) => {
+    console.log(values);
+});
+
+//output: [ 3, 42, "foo" ]
+/*
+[
+  { status: 'fulfilled', value: 3 },
+  { status: 'fulfilled', value: 42 },
+  { status: 'fulfilled', value: 'foo' }
+]
+*/
+```
 
 ## Bonus
 

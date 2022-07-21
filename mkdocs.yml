@@ -168,7 +168,8 @@ nav:
       - Set: pages/advanced/js/set.md
       - Interval: pages/advanced/js/setinterval.md
       - This: pages/advanced/js/this.md
-      - Time Out: pages/advanced/js/timeout.md
+      - This practices: pages/advanced/js/this-examples.md
+      - TimeOut: pages/advanced/js/timeout.md
 
 
   # - Home: index.md
