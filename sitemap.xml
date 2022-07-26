@@ -1,197 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/toto/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/toto/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/async-await/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/async-await/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/callback/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/callback/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/class/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/class/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/closures/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/closures/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/currying/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/currying/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/es6-utilities/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/es6-utilities/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/generator/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/generator/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/iterator/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/iterator/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/map/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/map/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/promise/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/promise/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/reduce-cases/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/reduce-cases/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/set/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/set/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/setinterval/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/setinterval/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/this-examples/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/this-examples/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/this/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/this/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/advanced/js/timeout/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/js/timeout/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/css/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/es6/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/es6/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/events/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/events/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/html/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/html/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/js-basics/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/js-basics/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/js-loop/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/js-loop/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/node/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/node/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/basis/services/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/services/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/react/useRef-or-useState/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/useRef-or-useState/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tips/css-reset/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css-reset/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tips/css/shruti-balasa/css-animation-line-hover/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css/shruti-balasa/css-animation-line-hover/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tips/css/shruti-balasa/display-contents-in-CSS-rule/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css/shruti-balasa/display-contents-in-CSS-rule/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/docusaurus-create/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/docusaurus-create/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/git/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/git/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/mkdocs-material/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/mkdocs-material/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/Docker/docker-exo/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/Docker/docker-exo/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/Docker/docker-exo2/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/Docker/docker-exo2/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/mkdocs-material/pages/tools/Docker/docker-start/</loc>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/Docker/docker-start/</loc>
          <lastmod>2022-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>

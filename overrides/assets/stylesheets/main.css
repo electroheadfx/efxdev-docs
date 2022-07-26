@@ -124,7 +124,7 @@
   font-weight: 700;
   font-size: 2.8rem;
   background-color: #002672;
-  background-image: linear-gradient(20deg, #030f4c, #00c3ff);
+  background-image: linear-gradient(20deg, #030f4c, #00ade2);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -132,7 +132,7 @@
   -moz-text-fill-color: transparent;
 }
 [data-md-color-scheme=default] .mdx-hero h1 {
-  background-image: linear-gradient(20deg, #ff4d00, #0080ff);
+  background-image: linear-gradient(20deg, #ff4d00, #00b7ff);
 }
 @media screen and (max-width: 29.9375em) {
   .mdx-hero h1 {
