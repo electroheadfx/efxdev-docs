@@ -1,18 +1,14 @@
 ---
+template: overrides/section.html
 tags:
   - web
   - basis
 hide:
   - toc
+title: Basis web
+section: advanced
+theme: js
 ---
-
-# Basis web
-
-<div class="whirl-box" markdown>
-
-![efx-whirl](../../assets/images/whirl-web.svg){ .whirl }
-
-</div>
 
 <div class="grid cards" markdown>
 

@@ -1,0 +1,46 @@
+{% extends "overrides/main.html" %}
+
+
+{% block announce %}
+toto
+{% endblock %}
+
+
+<!-- Content -->
+{% block content %}
+
+  <h1>{{ page.meta.title }}</h1>
+
+  <img class="whirl" src="../../assets/images/whirl-web.svg" alt="">
+
+  <div class="grid cards">
+    <ul>
+      {% set section = page.meta.section %}
+      {% set theme = page.meta.theme %}
+
+      {% for url, icon in config.icons[section][theme].items() %}
+
+        <li>
+          <span class="twemoji scale3">
+            {% include ".icons/"+icon.split('-')[0]+"/"+icon.split("-",1)[1]+".svg" %}
+          </span>
+          <a href="{{ url }}">{{ url }}
+            <span class="twemoji">
+              {% include ".icons/fontawesome/solid/arrow-right.svg" %}
+            </span>
+          </a>
+        </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+
+<!--
+  {% include "overrides/partials/content.html" %}
+--> 
+
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}

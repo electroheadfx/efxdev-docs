@@ -145,31 +145,50 @@ nav:
     - CSS: pages/basis/css.md
     - HTML: pages/basis/html.md
     - JS:
-      - Basics: pages/basis/js-basics.md
-      - Loop: pages/basis/js-loop.md
-    - Node: pages/basis/node.md
-    - Services: pages/basis/services.md
+      - pages/basis/js-basics.md
+      - pages/basis/js-loop.md
+    - pages/basis/node.md
+    - pages/basis/services.md
   - Advanced:
     - pages/advanced/index.md
     - JS:
       - pages/advanced/js/index.md
-      - ES6 Utilities: pages/advanced/js/es6-utilities.md
-      - Reduce Practices: pages/advanced/js/reduce-cases.md
-      - Async / Await: pages/advanced/js/async-await.md
-      - callback: pages/advanced/js/callback.md
-      - Class: pages/advanced/js/class.md
-      - Closures: pages/advanced/js/closures.md
-      - Function currying: pages/advanced/js/currying.md
-      - Generator: pages/advanced/js/generator.md
-      - Iterator: pages/advanced/js/iterator.md
-      - Map: pages/advanced/js/map.md
-      - Promise: pages/advanced/js/promise.md
-      - Set: pages/advanced/js/set.md
-      - Interval: pages/advanced/js/setinterval.md
-      - This: pages/advanced/js/this.md
-      - This practices: pages/advanced/js/this-examples.md
-      - TimeOut: pages/advanced/js/timeout.md
+      - pages/advanced/js/async-await.md
+      - pages/advanced/js/callback.md
+      - pages/advanced/js/class.md
+      - pages/advanced/js/closures.md
+      - pages/advanced/js/es6-utilities.md
+      - pages/advanced/js/reduce-cases.md
+      - pages/advanced/js/currying.md
+      - pages/advanced/js/generator.md
+      - pages/advanced/js/iterator.md
+      - pages/advanced/js/map.md
+      - pages/advanced/js/promise.md
+      - pages/advanced/js/set.md
+      - pages/advanced/js/setinterval.md
+      - pages/advanced/js/this.md
+      - pages/advanced/js/this-examples.md
+      - pages/advanced/js/timeout.md
 
+icons:
+  advanced:
+    js:
+      async-await: fontawesome/solid-6
+      callback: material-seat-legroom-reduced
+      class: material-sync
+      closures: material-call-merge
+      es6-utilities: material-checkbox-multiple-blank-outline
+      reduce-cases: material-vector-square-close
+      currying: material-function
+      generator: material-gradient-vertical
+      iterator: material-account-cog
+      map: material-access-point
+      promise: fontawesome/solid-person-arrow-up-from-line
+      set: fontawesome/solid-kitchen-set
+      setinterval: material-clock-time-one
+      this: material-human-handsup
+      this-examples: material-text-box-search-outline
+      timeout: material-timer-cog-outline
 
   # - Home: index.md
   # - Getting started:

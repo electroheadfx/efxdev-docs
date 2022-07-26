@@ -109,7 +109,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-[Go to toto](toto.md){ .md-button }
+[Go to toto](index.md){ .md-button }
 
 ``` js linenums="1" hl_lines="3"
 # Code block content
