@@ -1,5 +1,5 @@
 site_name: efxdev-docs
-site_url: https://electroheadfx.github.io/mkdocs-material
+site_url: https://electroheadfx.github.io/efxdev-docs
 site_author: Laurent Marques
 site_description: >-
   Efxdev docs, exercices, tips for creative modern web platform standard with design system resilient UX, progressive enhancement, optimistic UI and accessibility
@@ -139,7 +139,7 @@ extra:
 
 # Page tree
 nav:
-  - Home: /
+  - Home: /efxdev-docs/
   - Basis:
     - pages/basis/index.md
     - CSS: pages/basis/css.md
