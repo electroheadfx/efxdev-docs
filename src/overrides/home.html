@@ -22,6 +22,13 @@
 
 {% extends "overrides/main.html" %}
 
+
+{% block announce %} 
+   <a target="_blank" href="http://efxdesign.fr">
+    Graphic and design stuff on <strong>efxdesign.fr</strong>
+  </a>
+ {% endblock %} 
+
 <!-- Render hero under tabs -->
 {% block tabs %}
   {{ super() }}
@@ -78,20 +85,20 @@
         <!-- Hero content -->
         <div class="mdx-hero__content">
           <h1>Technical documentation that just works</h1>
-          <p>{{ config.site_description }}. Set up in 5 minutes.</p>
+          <p>{{ config.site_description }}.</p>
           <a
-            href="{{ page.next_page.url | url }}"
-            title="{{ page.next_page.title | e }}"
+            href="pages/basis"
+            title="basis section"
             class="md-button md-button--primary"
           >
-            Quick start
+            Basis section
           </a>
           <a
-            href="{{ 'insiders/' | url }}"
-            title="Material for MkDocs Insiders"
-            class="md-button"
+            href="pages/advanced"
+            title="advanced section"
+            class="md-button md-button--outline"
           >
-            Get Insiders
+            Advanced section
           </a>
         </div>
       </div>

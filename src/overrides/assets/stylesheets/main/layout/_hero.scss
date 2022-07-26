@@ -28,22 +28,22 @@
 .mdx-container {
   padding-top: px2rem(20px);
   background:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1123,12.2l0,245.8L0,258v-10.8c0,0,214.5-116.4,391-117.6c259,0,454.1,166.1,732-124.2C1123,8.2,1123,12.2,1123,12.2z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,
     linear-gradient(
       to bottom,
       var(--md-primary-fg-color),
-      hsla(280, 67%, 55%, 1) 99%,
+      hsla(53, 149%, 208%, 1) 99%,
       var(--md-default-bg-color) 99%
     );
 
   // Adjust background for slate theme
   [data-md-color-scheme="slate"] & {
     background:
-      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") no-repeat bottom,
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1123,12.2l0,245.8L0,258v-10.8c0,0,214.5-116.4,391-117.6c259,0,454.1,166.1,732-124.2C1123,8.2,1123,12.2,1123,12.2z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") no-repeat bottom,
       linear-gradient(
         to bottom,
         var(--md-primary-fg-color),
-        hsla(280, 67%, 55%, 1) 99%,
+        rgb(77, 181, 247) 99%,
         var(--md-default-bg-color) 99%
       );
   }
@@ -56,14 +56,33 @@
 
   // Hero headline
   h1 {
-    margin-bottom: px2rem(20px);
+    line-height: 1.09;
+    margin-bottom: px2rem(18px);
     color: currentcolor;
     font-weight: 700;
+    font-size: 2.8rem;
+
+    background-color: #002672;
+    background-image: linear-gradient(20deg, #030f4c, #00c3ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+    [data-md-color-scheme="default"] & {
+      background-image: linear-gradient(20deg, #ff4d00, #0080ff);
+    }
 
     // [mobile portrait -]: Larger hero headline
     @include break-to-device(mobile portrait) {
       font-size: px2rem(28px);
     }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   // Hero content
@@ -78,8 +97,8 @@
 
     // Adjust spacing and set dimensions
     &__content {
-      max-width: px2rem(380px);
-      margin-top: px2rem(70px);
+      max-width: px2rem(450px);
+      margin-top: px2rem(40px);
       padding-bottom: 14vw;
     }
 
@@ -116,9 +135,13 @@
 
     // Primary button
     &--primary {
-      color: hsla(280, 37%, 48%, 1);
-      background-color: var(--md-primary-bg-color);
-      border-color: var(--md-primary-bg-color);
+      color: var(--md-accent-bg-color);
+      background-color: var(--md-primary-fg-color--dark);
+      border-color: var(--md-primary-fg-color--dark);
     }
   }
 }
+
+// .md-typeset .md-button:is(:focus, :hover) {
+//   color: var(--md-accent-bg-color);
+// }

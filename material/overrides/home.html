@@ -2,6 +2,11 @@
   This file was automatically generated - do not edit
 -#}
 {% extends "overrides/main.html" %}
+{% block announce %} 
+   <a target="_blank" href="http://efxdesign.fr">
+    Graphic and design stuff on <strong>efxdesign.fr</strong>
+  </a>
+ {% endblock %} 
 {% block tabs %}
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
@@ -13,12 +18,12 @@
         </div>
         <div class="mdx-hero__content">
           <h1>Technical documentation that just works</h1>
-          <p>{{ config.site_description }}. Set up in 5 minutes.</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-            Quick start
+          <p>{{ config.site_description }}.</p>
+          <a href="pages/basis" title="basis section" class="md-button md-button--primary">
+            Basis section
           </a>
-          <a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
-            Get Insiders
+          <a href="pages/advanced" title="advanced section" class="md-button md-button--outline">
+            Advanced section
           </a>
         </div>
       </div>

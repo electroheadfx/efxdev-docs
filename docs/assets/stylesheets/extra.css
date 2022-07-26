@@ -1,0 +1,82 @@
+.scale3 {
+  transform: scale(3);
+}
+
+.whirl {
+  margin-top: -40px!important;
+}
+
+.push10 {
+  margin-left: 25px;
+  margin-top: 50px;
+}
+
+  /*
+  default color
+  --md-code-hl-number-color: #E6695B;
+  --md-code-hl-special-color: #F06091;
+  --md-code-hl-function-color: #C973D9;
+  --md-code-hl-constant-color: #9384E2;
+  --md-code-hl-keyword-color: #6791E0;
+  --md-code-hl-string-color: #2FB170;
+  --md-code-hl-name-color: #D5D7E2;
+  --md-code-hl-operator-color: #9497B3;
+  --md-code-hl-punctuation-color: #9497B3;
+  --md-code-hl-comment-color: #9497B3;
+  --md-code-hl-generic-color: #9497B3;
+  --md-code-hl-variable-color: #9497B3;
+  --md-code-fg-color: #D5D7E2;
+  --md-code-bg-color: #21222C;
+  --md-code-hl-color: #303D5B;
+  */
+
+
+:root > [data-md-color-scheme="default"] {
+
+  /* --md-primary-fg-color:        #b6c90f;
+  --md-primary-fg-color--light: #dae705;
+  --md-primary-fg-color--dark:  #abbf00; */
+
+  --md-primary-fg-color:        #ffc800;
+  --md-primary-fg-color--light: #ffd549;
+  --md-primary-fg-color--dark:  #ff7b00;
+
+  --md-code-hl-number-color: #0007d5;
+  --md-code-hl-constant-color: #b75b04;
+  --md-code-hl-operator-color: #006fb0;
+  --md-code-hl-comment-color: #9f9475;
+  --md-code-hl-string-color: #477602;
+  --md-code-hl-punctuation-color: #d10590;
+  --md-code-bg-color: #F4F5F3;
+}
+
+:root > [data-md-color-scheme="slate"] {
+
+  --md-primary-fg-color:        #ffa600;
+  --md-primary-fg-color--light: #feb82c;
+  --md-primary-fg-color--dark:  #ed8300;
+
+  --md-code-hl-number-color: #ff8644;
+  --md-code-hl-special-color: #F06091;
+  --md-code-hl-function-color: #C973D9;
+  --md-code-hl-constant-color: #ebc52b;
+  --md-code-hl-keyword-color: #8acffd;
+  --md-code-hl-string-color: #f2e820;
+  --md-code-hl-name-color: #e2e1d5;
+  --md-code-hl-operator-color: #ffd92e;
+  --md-code-hl-punctuation-color: #97d105;
+  --md-code-hl-comment-color: #8f8b80;
+  --md-code-hl-generic-color: #9497B3;
+  --md-code-hl-variable-color: #7bbb37;
+  /* Code block foreground, background and line highlight colors are defined via: */
+  --md-code-fg-color: #D5D7E2;
+  --md-code-bg-color: #21222C;
+  --md-code-hl-color: #303D5B;
+}
+
+
+.whirl-box {
+  width: 100%;
+  height: 218px;
+}
+
