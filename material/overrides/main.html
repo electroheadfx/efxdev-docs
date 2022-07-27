@@ -5,15 +5,11 @@
 {% block extrahead %}
   <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/main.css' | url }}">
 {% endblock %}
-{% block announce %}
-  <a href="https://twitter.com/squidfunk">
-    For updates follow <strong>@squidfunk</strong> on
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
+{% block announce %} 
+   <a target="_blank" href="http://efxdesign.fr">
+    Graphic and design stuff on <strong>efxdesign.fr</strong>
   </a>
-{% endblock %}
+ {% endblock %} 
 {% block content %}
   {% include "overrides/partials/content.html" %}
 {% endblock %}

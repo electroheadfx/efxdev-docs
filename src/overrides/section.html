@@ -2,39 +2,61 @@
 
 
 {% block announce %}
-toto
 {% endblock %}
 
 
 <!-- Content -->
 {% block content %}
 
-  <h1>{{ page.meta.title }}</h1>
+  {% if page.meta.menu and page.meta.section %}
 
-  <img class="whirl" src="../../assets/images/whirl-web.svg" alt="">
+    <h1>{{ page.meta.title }}</h1>
 
-  <div class="grid cards">
-    <ul>
-      {% set section = page.meta.section %}
-      {% set theme = page.meta.theme %}
+    <img class="whirl" src="{{ config.theme.category_illustraton | url }}" alt="efx whirl web">
+    
+    {% else %}
+        
+    {% include "overrides/partials/content.html" %}
 
-      {% for url, icon in config.icons[section][theme].items() %}
+  {% endif %}
 
-        <li>
-          <span class="twemoji scale3">
-            {% include ".icons/"+icon.split('-')[0]+"/"+icon.split("-",1)[1]+".svg" %}
-          </span>
-          <a href="{{ url }}">{{ url }}
-            <span class="twemoji">
-              {% include ".icons/fontawesome/solid/arrow-right.svg" %}
-            </span>
-          </a>
-        </li>
+  {% if page.meta.menu %}
 
-      {% endfor %}
+    <div class="grid cards">
 
-    </ul>
-  </div>
+      <ul>
+
+        {% if page.meta.section %}
+        
+          {% set section = page.meta.menu %}
+          {% set theme = page.meta.section %}
+
+          {% for url, icon in config.extra.navIcons[section][theme].items() %}
+            <li>
+              <a class="grid-cards--link" href="{{ url }}">
+                <div class="grid-cards--icon twemoji scale3">
+                  {% include ".icons/"+icon.split('-')[0]+"/"+icon.split("-",1)[1]+".svg" %}
+                </div>
+                <div class="grid-cards--content">
+                  <span>{{ url.replace("-", " ").title() }}</span>
+                  <span class="twemoji">
+                    {% include ".icons/fontawesome/solid/arrow-right.svg" %}
+                  </span>
+                </div>
+              </a>
+            </li>
+          {% endfor %}          
+
+        {% endif %}
+
+        </ul>
+
+      </div>
+  
+  {% endif %}
+      
+
+
 
 <!--
   {% include "overrides/partials/content.html" %}

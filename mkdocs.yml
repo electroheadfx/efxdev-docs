@@ -71,6 +71,7 @@ theme:
     # - navigation.tabs.sticky 
   language: en
   logo: assets/images/efx-white.svg
+  category_illustraton: assets/images/whirl-web.svg
   favicon: ./assets/favicon/favicon.png
   font:
     text: Roboto
@@ -137,6 +138,28 @@ extra:
 #       link: /de/
 #       lang: de
 
+  navIcons:
+    advanced:
+      index:
+        javascript: material-language-javascript
+      javascript:
+        async-await: fontawesome/solid-6
+        callback: material-seat-legroom-reduced
+        class: material-sync
+        closures: material-call-merge
+        es6-utilities: material-checkbox-multiple-blank-outline
+        reduce-cases: material-vector-square-close
+        currying: material-function
+        generator: material-gradient-vertical
+        iterator: material-account-cog
+        map: material-access-point
+        promise: fontawesome/solid-person-arrow-up-from-line
+        set: fontawesome/solid-kitchen-set
+        setinterval: material-clock-time-one
+        this: material-human-handsup
+        this-examples: material-text-box-search-outline
+        timeout: material-timer-cog-outline
+
 # Page tree
 nav:
   - Home: /efxdev-docs/
@@ -151,7 +174,7 @@ nav:
     - pages/basis/services.md
   - Advanced:
     - pages/advanced/index.md
-    - JS:
+    - Javascript:
       - pages/advanced/js/index.md
       - pages/advanced/js/async-await.md
       - pages/advanced/js/callback.md
@@ -170,25 +193,6 @@ nav:
       - pages/advanced/js/this-examples.md
       - pages/advanced/js/timeout.md
 
-icons:
-  advanced:
-    js:
-      async-await: fontawesome/solid-6
-      callback: material-seat-legroom-reduced
-      class: material-sync
-      closures: material-call-merge
-      es6-utilities: material-checkbox-multiple-blank-outline
-      reduce-cases: material-vector-square-close
-      currying: material-function
-      generator: material-gradient-vertical
-      iterator: material-account-cog
-      map: material-access-point
-      promise: fontawesome/solid-person-arrow-up-from-line
-      set: fontawesome/solid-kitchen-set
-      setinterval: material-clock-time-one
-      this: material-human-handsup
-      this-examples: material-text-box-search-outline
-      timeout: material-timer-cog-outline
 
   # - Home: index.md
   # - Getting started:

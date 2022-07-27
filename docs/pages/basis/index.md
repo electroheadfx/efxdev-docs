@@ -6,8 +6,6 @@ tags:
 hide:
   - toc
 title: Basis web
-section: advanced
-theme: js
 ---
 
 <div class="grid cards" markdown>
