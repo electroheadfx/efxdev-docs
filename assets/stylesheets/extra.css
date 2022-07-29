@@ -1,5 +1,9 @@
+.md-grid {
+  max-width: 1440px; 
+}
+
 .scale3 {
-  transform: scale(3);
+  transform: scale(2);
 }
 
 .whirl {

@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Efxdev docs, exercices, tips for creative modern web platform standard with design system resilient UX, progressive enhancement, optimistic UI and accessibility" name="description"/>
+<meta content="Efxdev docs, exercices, tips for creative modern web platform standard with modern tools, design system resilient UX, progressive enhancement, optimistic UI and accessibility" name="description"/>
 <meta content="Laurent Marques" name="author"/>
 <link href="https://electroheadfx.github.io/efxdev-docs/pages/react/useRef-or-useState/" rel="canonical"/>
 <link href="../../../assets/favicon/favicon.png" rel="icon"/>
@@ -30,8 +30,6 @@
 <a class="md-skip" href="#useref-or-usestate">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
@@ -124,6 +122,11 @@
       </a>
 </li>
 <li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+        Tools
+      </a>
+</li>
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../advanced/">
         Advanced
       </a>
@@ -197,26 +200,16 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../basis/js-basics/">
-        Basics
+        Javascript basics
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../basis/js-loop/">
-        Loop
+        Js loop
       </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../basis/node/">
-        Node
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../basis/services/">
-        Services
-      </a>
 </li>
 </ul>
 </nav>
@@ -224,109 +217,208 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/">Advanced</a>
+<a href="../../tools/">Tools</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="Advanced" class="md-nav" data-md-level="1">
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Docker" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Docker
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-start/">
+        Docker Start
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice1/">
+        Create a dockerfile/ex1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice2/">
+        Create a dockerfile/ex2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/git/">
+        Git Master commands
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/node/">
+        Node
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/services/">
+        Services
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../advanced/">Advanced</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Advanced" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Advanced
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/js/">JS</a>
-<label for="__nav_3_2">
+<a href="../../advanced/javascript/">Javascript</a>
+<label for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="JS" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_2">
+<nav aria-label="Javascript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
-          JS
+          Javascript
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/es6-utilities/">
-        ES6 Utilities
+<a class="md-nav__link" href="../../advanced/javascript/async-await/">
+        Async await
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/reduce-cases/">
-        Reduce Practices
+<a class="md-nav__link" href="../../advanced/javascript/callback/">
+        Callback
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/async-await/">
-        Async / Await
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/callback/">
-        callback
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/class/">
+<a class="md-nav__link" href="../../advanced/javascript/class/">
         Class
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/closures/">
+<a class="md-nav__link" href="../../advanced/javascript/closures/">
         Closures
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/currying/">
-        Function currying
+<a class="md-nav__link" href="../../advanced/javascript/es6-utilities/">
+        Es6 utilities
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/generator/">
+<a class="md-nav__link" href="../../advanced/javascript/reduce-cases/">
+        Reduce cases
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/javascript/currying/">
+        Currying
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/javascript/generator/">
         Generator
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/iterator/">
-        Iterator
+<a class="md-nav__link" href="../../advanced/javascript/iterator/">
+        Iterables &amp; Iterators
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/map/">
-        Map
+<a class="md-nav__link" href="../../advanced/javascript/map/">
+        Map object
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/promise/">
-        Promise
+<a class="md-nav__link" href="../../advanced/javascript/promise/">
+        Promise intro
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/set/">
+<a class="md-nav__link" href="../../advanced/javascript/set/">
         Set
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/setinterval/">
-        Interval
+<a class="md-nav__link" href="../../advanced/javascript/setinterval/">
+        Timeouts &amp; Intervals
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/this/">
+<a class="md-nav__link" href="../../advanced/javascript/this/">
         This
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/this-examples/">
-        This practices
+<a class="md-nav__link" href="../../advanced/javascript/this-examples/">
+        This examples
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/js/timeout/">
-        TimeOut
+<a class="md-nav__link" href="../../advanced/javascript/timeout/">
+        Timeout
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../advanced/typescript/">Typescript</a>
+<label for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Typescript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Typescript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/typescript/basis/">
+        Les bases de TS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/typescript/advanced/">
+        TypeScript Avancé
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/typescript/classes/">
+        Les classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../advanced/typescript/react/">
+        Typescript with react
       </a>
 </li>
 </ul>
