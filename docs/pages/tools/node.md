@@ -1,4 +1,6 @@
-# Install repo with degit
+# Node
+
+## Degit
 
 - **install from current working directory**
 

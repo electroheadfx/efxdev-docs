@@ -1,9 +1,6 @@
 {% extends "overrides/main.html" %}
 
-
-{% block announce %}
-{% endblock %}
-
+{% block announce %}false{% endblock %}
 
 <!-- Content -->
 {% block content %}
@@ -26,26 +23,34 @@
 
       <ul>
 
-        {% if page.meta.section %}
+        {% if page.meta.section and page.meta.menu %}
         
           {% set section = page.meta.menu %}
           {% set theme = page.meta.section %}
 
-          {% for url, icon in config.extra.navIcons[section][theme].items() %}
-            <li>
-              <a class="grid-cards--link" href="{{ url }}">
-                <div class="grid-cards--icon twemoji scale3">
-                  {% include ".icons/"+icon.split('-')[0]+"/"+icon.split("-",1)[1]+".svg" %}
-                </div>
-                <div class="grid-cards--content">
-                  <span>{{ url.replace("-", " ").title() }}</span>
-                  <span class="twemoji">
-                    {% include ".icons/fontawesome/solid/arrow-right.svg" %}
-                  </span>
-                </div>
-              </a>
-            </li>
-          {% endfor %}          
+          {% if config.extra.navIcons[section] and config.extra.navIcons[section][theme] %}
+
+            {% for url, icon in config.extra.navIcons[section][theme].items() %}
+              <li>
+                <a class="grid-cards--link" href="{{ url }}">
+                  <div class="grid-cards--icon twemoji scale3">
+                    {% include ".icons/"+icon.split('-')[0]+"/"+icon.split("-",1)[1]+".svg" %}
+                  </div>
+                  <div class="grid-cards--content">
+                    <span>{{ url.replace("-", " ").title() }}</span>
+                    <span class="twemoji">
+                      {% include ".icons/fontawesome/solid/arrow-right.svg" %}
+                    </span>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+
+          {% else %}
+          
+            <h1>No icons setup in mkdocs.yml (extra/navIcons)</h1>
+          
+          {% endif %}
 
         {% endif %}
 

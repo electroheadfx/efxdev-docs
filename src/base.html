@@ -200,15 +200,17 @@
     </div>
 
     <!-- Announcement bar -->
-    <div data-md-component="announce">
-      {% if self.announce() %}
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            {% block announce %}{% endblock %}
-          </div>
-        </aside>
+    {% if self.announce() %}
+      {% if "false" not in self.announce() %}
+      <div data-md-component="announce">
+          <aside class="md-banner">
+            <div class="md-banner__inner md-grid md-typeset">
+              {% block announce %}{% endblock %}
+            </div>
+          </aside>
+        </div>
+        {% endif %}
       {% endif %}
-    </div>
 
     <!-- Version warning -->
     {% if config.extra.version %}

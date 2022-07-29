@@ -1,4 +1,4 @@
-# Exo with compose/dockerfile
+# Create a dockerfile/ex1
 
 [Project Based this video](https://www.youtube.com/watch?v=fZZwN_e3LYg)
 

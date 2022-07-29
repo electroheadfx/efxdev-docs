@@ -1,4 +1,4 @@
-# Github Master commands
+# Git Master commands
 
 ## Github base
 

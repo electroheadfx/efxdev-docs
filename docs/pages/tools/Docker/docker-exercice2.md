@@ -1,4 +1,4 @@
-# Docker exo with Dockerfile and compose
+# Create a dockerfile/ex2
 
 ## App
 

@@ -98,15 +98,17 @@
         </a>
       {% endif %}
     </div>
-    <div data-md-component="announce">
-      {% if self.announce() %}
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            {% block announce %}{% endblock %}
-          </div>
-        </aside>
+    {% if self.announce() %}
+      {% if "false" not in self.announce() %}
+      <div data-md-component="announce">
+          <aside class="md-banner">
+            <div class="md-banner__inner md-grid md-typeset">
+              {% block announce %}{% endblock %}
+            </div>
+          </aside>
+        </div>
+        {% endif %}
       {% endif %}
-    </div>
     {% if config.extra.version %}
       <div data-md-component="outdated" hidden>
         <aside class="md-banner md-banner--warning">

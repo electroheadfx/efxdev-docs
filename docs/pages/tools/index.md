@@ -2,10 +2,10 @@
 template: overrides/section.html
 tags:
   - web
-  - advanced
+  - basis
 hide:
   - toc
-title: Advanced web
-menu: advanced
+title: Tools
+menu: tools
 section: index
 ---

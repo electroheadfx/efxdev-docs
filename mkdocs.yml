@@ -2,7 +2,7 @@ site_name: efxdev-docs
 site_url: https://electroheadfx.github.io/efxdev-docs
 site_author: Laurent Marques
 site_description: >-
-  Efxdev docs, exercices, tips for creative modern web platform standard with design system resilient UX, progressive enhancement, optimistic UI and accessibility
+  Efxdev docs, exercices, tips for creative modern web platform standard with modern tools, design system resilient UX, progressive enhancement, optimistic UI and accessibility
 # Repository
 repo_name: electroheadfx/efxdev-docs
 repo_url: https://github.com/electroheadfx/efxdev-docs
@@ -139,9 +139,17 @@ extra:
 #       lang: de
 
   navIcons:
+    basis:
+      index:
+        css: fontawesome/brands-css3-alt
+        es6: fontawesome/solid-6
+        events: material-television-ambient-light
+        html: fontawesome/brands-html5
+        js: fontawesome/brands-js
     advanced:
       index:
         javascript: material-language-javascript
+        Typescript: material-language-typescript
       javascript:
         async-await: fontawesome/solid-6
         callback: material-seat-legroom-reduced
@@ -159,6 +167,17 @@ extra:
         this: material-human-handsup
         this-examples: material-text-box-search-outline
         timeout: material-timer-cog-outline
+      typescript:
+        basis: fontawesome/brands-microblog
+        advanced: fontawesome/brands-adversal
+        classes: material-sync
+        react: material-react
+    tools:
+      index:
+        docker: fontawesome/brands-docker
+        git: material-git
+        node: material-nodejs
+        services: material-room-service
 
 # Page tree
 nav:
@@ -170,28 +189,41 @@ nav:
     - JS:
       - pages/basis/js-basics.md
       - pages/basis/js-loop.md
-    - pages/basis/node.md
-    - pages/basis/services.md
+  - Tools:
+    - pages/tools/index.md
+    - Docker:
+      - pages/tools/docker/docker-start.md
+      - pages/tools/docker/docker-exercice1.md
+      - pages/tools/docker/docker-exercice2.md
+    - pages/tools/git.md
+    - pages/tools/node.md
+    - pages/tools/services.md
   - Advanced:
     - pages/advanced/index.md
     - Javascript:
-      - pages/advanced/js/index.md
-      - pages/advanced/js/async-await.md
-      - pages/advanced/js/callback.md
-      - pages/advanced/js/class.md
-      - pages/advanced/js/closures.md
-      - pages/advanced/js/es6-utilities.md
-      - pages/advanced/js/reduce-cases.md
-      - pages/advanced/js/currying.md
-      - pages/advanced/js/generator.md
-      - pages/advanced/js/iterator.md
-      - pages/advanced/js/map.md
-      - pages/advanced/js/promise.md
-      - pages/advanced/js/set.md
-      - pages/advanced/js/setinterval.md
-      - pages/advanced/js/this.md
-      - pages/advanced/js/this-examples.md
-      - pages/advanced/js/timeout.md
+      - pages/advanced/javascript/index.md
+      - pages/advanced/javascript/async-await.md
+      - pages/advanced/javascript/callback.md
+      - pages/advanced/javascript/class.md
+      - pages/advanced/javascript/closures.md
+      - pages/advanced/javascript/es6-utilities.md
+      - pages/advanced/javascript/reduce-cases.md
+      - pages/advanced/javascript/currying.md
+      - pages/advanced/javascript/generator.md
+      - pages/advanced/javascript/iterator.md
+      - pages/advanced/javascript/map.md
+      - pages/advanced/javascript/promise.md
+      - pages/advanced/javascript/set.md
+      - pages/advanced/javascript/setinterval.md
+      - pages/advanced/javascript/this.md
+      - pages/advanced/javascript/this-examples.md
+      - pages/advanced/javascript/timeout.md
+    - Typescript:
+      - pages/advanced/typescript/index.md
+      - pages/advanced/typescript/basis.md
+      - pages/advanced/typescript/advanced.md
+      - pages/advanced/typescript/classes.md
+      - pages/advanced/typescript/react.md
 
 
   # - Home: index.md
