@@ -1,10 +1,11 @@
 ---
 template: overrides/section.html
 tags:
-  - Typescript
+  - react
+  - reactjs
 hide:
   - toc
-title: Typescript
+title: ReactJS
 menu: advanced
-section: typescript
+section: react
 ---

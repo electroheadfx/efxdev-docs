@@ -150,6 +150,7 @@ extra:
       index:
         javascript: material-language-javascript
         Typescript: material-language-typescript
+        react: material-react
       javascript:
         async-await: fontawesome/solid-6
         callback: material-seat-legroom-reduced
@@ -172,6 +173,10 @@ extra:
         advanced: fontawesome/brands-adversal
         classes: material-sync
         react: material-react
+      react:
+        react-fetching: fontawesome/solid-crutch
+        useRef-or-useState: material-state-machine
+
     tools:
       index:
         docker: fontawesome/brands-docker
@@ -186,7 +191,7 @@ nav:
     - pages/basis/index.md
     - CSS: pages/basis/css.md
     - HTML: pages/basis/html.md
-    - JS:
+    - Javascript:
       - pages/basis/js-basics.md
       - pages/basis/js-loop.md
   - Tools:
@@ -197,6 +202,9 @@ nav:
       - pages/tools/docker/docker-exercice2.md
     - pages/tools/git.md
     - pages/tools/node.md
+    - Static site:
+      - pages/tools/static/docusaurus-create.md
+      - pages/tools/static/mkdocs-material.md
     - pages/tools/services.md
   - Advanced:
     - pages/advanced/index.md
@@ -224,7 +232,14 @@ nav:
       - pages/advanced/typescript/advanced.md
       - pages/advanced/typescript/classes.md
       - pages/advanced/typescript/react.md
-
+    - React:
+      - pages/advanced/react/index.md
+      - pages/advanced/react/react-fetching.md
+      - pages/advanced/react/useRef-or-useState.md
+    - Remix:
+      - pages/advanced/remix/index.md
+      - pages/advanced/remix/remix-fly.md
+      - pages/advanced/remix/discord-discussions.md
 
   # - Home: index.md
   # - Getting started:

@@ -2,7 +2,6 @@
   This file was automatically generated - do not edit
 -#}
 {% extends "overrides/main.html" %}
-{% block announce %}false{% endblock %}
 {% block content %}
   {% if page.meta.menu and page.meta.section %}
     <h1>{{ page.meta.title }}</h1>
@@ -34,6 +33,25 @@
             {% endfor %}
           {% else %}
             <h1>No icons setup in mkdocs.yml (extra/navIcons)</h1>
+              {% for nav_item in nav %}
+                {% if "Advanced" in nav_item.title %}
+                    active : {{ nav_item.active}}
+                    <ul>
+                    {% for child in nav_item.children %}
+                      {% if "Remix" in child.title  %}
+                        <li>{{ child.title }} : {{ child.url }}</li>
+                          <ul>
+                              {% for page in child.children %}
+                                {% if not page.is_index %}
+                                  <li>{{ page.title }} : {{ page.url }}</li>
+                                {% endif %}
+                              {% endfor %}
+                          </ul>
+                      {% endif %}
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+              {% endfor %}
           {% endif %}
         {% endif %}
         </ul>

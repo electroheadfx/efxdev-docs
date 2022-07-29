@@ -1,10 +1,11 @@
 ---
 template: overrides/section.html
 tags:
-  - Typescript
+  - Remix
+  - Remix-run
 hide:
   - toc
-title: Typescript
+title: Remix
 menu: advanced
-section: typescript
+section: remix
 ---

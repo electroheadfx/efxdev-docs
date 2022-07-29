@@ -1,6 +1,6 @@
-# Les classes
+# Class
 
-## Les Classes de base
+## Base
 
 ```ts
 class Book {

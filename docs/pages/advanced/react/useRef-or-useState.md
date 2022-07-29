@@ -4,7 +4,7 @@
 
 If you create a simple counter app using useRef to store the state:
 
-```jsx
+```js
 import { useRef } from "react";
 
 const App = () => {
@@ -33,7 +33,7 @@ If you set the state with `useState`, clicking on the button would rerender the 
 
 Rerendering is an expensive operation. In some cases you do not want to keep rerendering the app. For example, when you store the input value in state to create a controlled component. In this case for each keystroke you would rerender the app. If you use the `ref` to get a reference to the DOM element, with `useState` you would rerender the component only once:
 
-```jsx
+```js
 import { useState, useRef } from "react";
 const App = () => {
   const [value, setValue] = useState("");
