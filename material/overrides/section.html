@@ -32,26 +32,35 @@
               </li>
             {% endfor %}
           {% else %}
-            <h1>No icons setup in mkdocs.yml (extra/navIcons)</h1>
-              {% for nav_item in nav %}
-                {% if "Advanced" in nav_item.title %}
-                    active : {{ nav_item.active}}
-                    <ul>
+            {% set section = page.meta.menu %}
+            {% set theme = page.meta.section %}
+            {% for nav_item in nav %}
+              {% if section in nav_item.title %}
+                  {% if nav_item.active %}
                     {% for child in nav_item.children %}
-                      {% if "Remix" in child.title  %}
-                        <li>{{ child.title }} : {{ child.url }}</li>
-                          <ul>
-                              {% for page in child.children %}
-                                {% if not page.is_index %}
-                                  <li>{{ page.title }} : {{ page.url }}</li>
-                                {% endif %}
-                              {% endfor %}
-                          </ul>
+                      {% if theme in child.title  %}
+                        {% for page in child.children %}
+                          {% if not page.is_index %}
+                            <li>
+                              <a class="grid-cards--link" href="{{ page.url.split('/')[-2] }}">
+                                <div class="grid-cards--icon twemoji scale3">
+                                  {% include ".icons/octicons/markdown-16.svg" %}
+                                </div>
+                                <div class="grid-cards--content">
+                                  <span>{{ page.title.title() }}</span>
+                                  <span class="twemoji">
+                                    {% include ".icons/fontawesome/solid/arrow-right.svg" %}
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
                       {% endif %}
                     {% endfor %}
-                    </ul>
-                {% endif %}
-              {% endfor %}
+                  {% endif %}
+              {% endif %}
+            {% endfor %}
           {% endif %}
         {% endif %}
         </ul>

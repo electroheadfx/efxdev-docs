@@ -6,6 +6,6 @@ tags:
 hide:
   - toc
 title: Remix
-menu: advanced
-section: remix
+menu: Advanced
+section: Remix
 ---

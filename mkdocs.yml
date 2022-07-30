@@ -197,12 +197,14 @@ nav:
   - Tools:
     - pages/tools/index.md
     - Docker:
+      - pages/tools/docker/index.md
       - pages/tools/docker/docker-start.md
       - pages/tools/docker/docker-exercice1.md
       - pages/tools/docker/docker-exercice2.md
     - pages/tools/git.md
     - pages/tools/node.md
     - Static site:
+      - pages/tools/static/index.md
       - pages/tools/static/docusaurus-create.md
       - pages/tools/static/mkdocs-material.md
     - pages/tools/services.md
