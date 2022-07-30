@@ -7,10 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Efxdev docs, exercices, tips for creative modern web platform standard with modern tools, design system resilient UX, progressive enhancement, optimistic UI and accessibility" name="description"/>
 <meta content="Laurent Marques" name="author"/>
-<link href="https://electroheadfx.github.io/efxdev-docs/pages/tools/docker/docker-exercice1/" rel="canonical"/>
+<link href="https://electroheadfx.github.io/efxdev-docs/pages/advanced/remix/discord-discussions/" rel="canonical"/>
 <link href="../../../../assets/favicon/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.3.9" name="generator"/>
-<title>Create a dockerfile/ex1 - efxdev-docs</title>
+<title>Discord Discussions - efxdev-docs</title>
 <link href="../../../../assets/stylesheets/main.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v7.736a.75.75 0 1 0 1.5 0V1.75A1.75 1.75 0 0 0 11.25 0h-8.5A1.75 1.75 0 0 0 1 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 0 0 0-1.5H2.75a.25.25 0 0 1-.25-.25V1.75zM4.75 4a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5zM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75zm11.774 3.537a.75.75 0 0 0-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 0 0-1.062 1.058l1.943 1.95a.75.75 0 0 0 1.055.008l4.557-4.45z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm6.5-.25A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.489 4.489 0 0 1-.563-1.191 3.833 3.833 0 0 1-.05-2.063 4.636 4.636 0 0 1-2.025-.293.75.75 0 1 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.748.748 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.404 2.404 0 0 1-.507-.441 3.063 3.063 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.753.753 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768a85.08 85.08 0 0 0-.317-.265c-.814-.68-1.75-1.462-2.692-2.619a3.74 3.74 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 0 1 9 6.25c0 .177-.04.264-.077.318a.956.956 0 0 1-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 0 0-.313.195 2.416 2.416 0 0 0-.692.661.75.75 0 0 0 1.248.832.956.956 0 0 1 .276-.245 6.3 6.3 0 0 1 .26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 0 0 8 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 1 0 1.342.67z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575L6.457 1.047zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.25a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0v-2.5z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 0 0-.01.004L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.02.02 0 0 0-.004-.009.02.02 0 0 0-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.492 3.492 0 0 1 2.441 0l.999-1a.75.75 0 1 1 1.06 1.061l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.013 5.013 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.684 1.684 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06zM6.173 5h3.654A.173.173 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173zM5.25 6.5a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75h-5.5z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H1.75zm4 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zm0 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zM2.5 7.75a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6z"/></svg>');}</style>
@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#create-a-dockerfileex1">
+<a class="md-skip" href="#discord-discussions">
           Skip to content
         </a>
 </div>
@@ -49,7 +49,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Create a dockerfile/ex1
+              Discord Discussions
             
           </span>
 </div>
@@ -122,12 +122,12 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../">
+<a class="md-tabs__link" href="../../../tools/">
         Tools
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../advanced/">
+<a class="md-tabs__link md-tabs__link--active" href="../../">
         Advanced
       </a>
 </li>
@@ -214,10 +214,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../">Tools</a>
+<a href="../../../tools/">Tools</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -228,10 +228,10 @@
           Tools
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../">Docker</a>
+<a href="../../../tools/docker/">Docker</a>
 <label for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -243,54 +243,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../docker-start/">
+<a class="md-nav__link" href="../../../tools/docker/docker-start/">
         Docker Start
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Create a dockerfile/ex1
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../tools/docker/docker-exercice1/">
         Create a dockerfile/ex1
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup-project">
-    Setup project
-  </a>
-<nav aria-label="Setup project" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create-dockerfile">
-    Create Dockerfile
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#build-our-docker-image">
-    Build our Docker Image
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-our-docker-image">
-    Test our docker image
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../docker-exercice2/">
+<a class="md-nav__link" href="../../../tools/docker/docker-exercice2/">
         Create a dockerfile/ex2
       </a>
 </li>
@@ -298,19 +261,19 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../git/">
+<a class="md-nav__link" href="../../../tools/git/">
         Git Master commands
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../node/">
+<a class="md-nav__link" href="../../../tools/node/">
         Node
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../static/">Static site</a>
+<a href="../../../tools/static/">Static site</a>
 <label for="__nav_3_5">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -322,12 +285,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../static/docusaurus-create/">
+<a class="md-nav__link" href="../../../tools/static/docusaurus-create/">
         Create doc with Docusaurus in GitLab Pages
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../static/mkdocs-material/">
+<a class="md-nav__link" href="../../../tools/static/mkdocs-material/">
         Install mkdocs-material
       </a>
 </li>
@@ -335,17 +298,17 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/">
+<a class="md-nav__link" href="../../../tools/services/">
         Services
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../advanced/">Advanced</a>
+<a href="../../">Advanced</a>
 <label for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -359,7 +322,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../advanced/javascript/">Javascript</a>
+<a href="../../javascript/">Javascript</a>
 <label for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -371,82 +334,82 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/async-await/">
+<a class="md-nav__link" href="../../javascript/async-await/">
         Async await
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/callback/">
+<a class="md-nav__link" href="../../javascript/callback/">
         Callback
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/class/">
+<a class="md-nav__link" href="../../javascript/class/">
         Class
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/closures/">
+<a class="md-nav__link" href="../../javascript/closures/">
         Closures
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/es6-utilities/">
+<a class="md-nav__link" href="../../javascript/es6-utilities/">
         Es6 utilities
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/reduce-cases/">
+<a class="md-nav__link" href="../../javascript/reduce-cases/">
         Reduce cases
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/currying/">
+<a class="md-nav__link" href="../../javascript/currying/">
         Currying
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/generator/">
+<a class="md-nav__link" href="../../javascript/generator/">
         Generator
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/iterator/">
+<a class="md-nav__link" href="../../javascript/iterator/">
         Iterables &amp; Iterators
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/map/">
+<a class="md-nav__link" href="../../javascript/map/">
         Map object
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/promise/">
+<a class="md-nav__link" href="../../javascript/promise/">
         Promise intro
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/set/">
+<a class="md-nav__link" href="../../javascript/set/">
         Set
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/setinterval/">
+<a class="md-nav__link" href="../../javascript/setinterval/">
         Timeouts &amp; Intervals
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/this/">
+<a class="md-nav__link" href="../../javascript/this/">
         This
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/this-examples/">
+<a class="md-nav__link" href="../../javascript/this-examples/">
         This examples
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/javascript/timeout/">
+<a class="md-nav__link" href="../../javascript/timeout/">
         Timeout
       </a>
 </li>
@@ -456,7 +419,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../advanced/typescript/">Typescript</a>
+<a href="../../typescript/">Typescript</a>
 <label for="__nav_4_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -468,22 +431,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/typescript/basis/">
+<a class="md-nav__link" href="../../typescript/basis/">
         Les bases de TS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/typescript/advanced/">
+<a class="md-nav__link" href="../../typescript/advanced/">
         TypeScript Avancé
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/typescript/classes/">
+<a class="md-nav__link" href="../../typescript/classes/">
         Class
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/typescript/react/">
+<a class="md-nav__link" href="../../typescript/react/">
         Typescript with react
       </a>
 </li>
@@ -493,7 +456,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../advanced/react/">React</a>
+<a href="../../react/">React</a>
 <label for="__nav_4_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -505,22 +468,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/react/react-fetching/">
+<a class="md-nav__link" href="../../react/react-fetching/">
         Fetching in react
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/react/useRef-or-useState/">
+<a class="md-nav__link" href="../../react/useRef-or-useState/">
         useRef or useState
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../advanced/remix/">Remix</a>
+<a href="../">Remix</a>
 <label for="__nav_4_5">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -532,14 +495,37 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/remix/remix-fly/">
+<a class="md-nav__link" href="../remix-fly/">
         Remix with Fly
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../advanced/remix/discord-discussions/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Discord Discussions
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Discord Discussions
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remix-catch-boundary">
+    Remix Catch boundary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preload-images-with-remix">
+    Preload Images with remix
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -562,27 +548,13 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setup-project">
-    Setup project
-  </a>
-<nav aria-label="Setup project" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create-dockerfile">
-    Create Dockerfile
+<a class="md-nav__link" href="#remix-catch-boundary">
+    Remix Catch boundary
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#build-our-docker-image">
-    Build our Docker Image
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#test-our-docker-image">
-    Test our docker image
+<a class="md-nav__link" href="#preload-images-with-remix">
+    Preload Images with remix
   </a>
 </li>
 </ul>
@@ -592,152 +564,136 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/tools/docker/docker-exercice1.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/advanced/remix/discord-discussions.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="create-a-dockerfileex1">Create a dockerfile/ex1</h1>
-<p><a href="https://www.youtube.com/watch?v=fZZwN_e3LYg">Project Based this video</a></p>
-<p><a href="https://github.com/Antoine-Flo/tuto-docker">GitHub - Antoine-Flo/tuto-docker</a></p>
-<h3 id="setup-project">Setup project</h3>
-<p><a href="https://github.com/electroheadfx/docker-compose-learn">The Project setup is available here</a></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>npm init -y
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>npm i express
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>touch app.js
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>code app.js
+<h1 id="discord-discussions">Discord Discussions</h1>
+<h2 id="remix-catch-boundary">Remix Catch boundary</h2>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>import type { LoaderFunction } from 'remix'
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>export const loader: LoaderFunction = function () {
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>  throw new Response(null, { status: 404 })
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>}
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>export function CatchBoundary() {
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>  return &lt;h1&gt;404 Not Found&lt;/h1&gt;
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>}
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>export default function () {}
 </code></pre></div>
-<blockquote>
-<p>Enter this code in <code>app.js</code></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>const <span class="nv">express</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">'express'</span><span class="o">)</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>const <span class="nv">app</span> <span class="o">=</span> express<span class="o">()</span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>const <span class="nv">port</span> <span class="o">=</span> <span class="m">8080</span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>app.get<span class="o">(</span><span class="s1">'/'</span>, <span class="o">(</span>req, res<span class="o">)</span> <span class="o">=</span>&gt; <span class="o">{</span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>  res.send<span class="o">(</span><span class="s1">'Hello World!'</span><span class="o">)</span>
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="o">})</span>
-<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a>
-<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1"># it expose port 8080 and log the info</span>
-<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a>app.listen<span class="o">(</span>port, <span class="o">()</span> <span class="o">=</span>&gt; <span class="o">{</span>
-<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a>  console.log<span class="o">(</span><span class="sb">`</span>App listening port <span class="si">${</span><span class="nv">port</span><span class="si">}</span><span class="sb">`</span><span class="o">)</span>
-<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="o">})</span>
+<h2 id="preload-images-with-remix">Preload Images with remix</h2>
+<ul>
+<li>so what I do is in Remix I import those hero images in different sizes, all are webp images compressed, then I set them as CSS variables using inline styles, and image-set let the browser pick what image to use based on the device pixel density </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">#</span><span class="nn">hero</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-4x</span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nf">image-set</span><span class="p">(</span><span class="w"></span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-1x</span><span class="p">)</span><span class="w"> </span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-2x</span><span class="p">)</span><span class="w"> </span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-3x</span><span class="p">)</span><span class="w"> </span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-4x</span><span class="p">)</span><span class="w"> </span><span class="mi">4</span><span class="n">x</span><span class="w"></span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="bp">-webkit-</span><span class="nf">image-set</span><span class="p">(</span><span class="w"></span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-1x</span><span class="p">)</span><span class="w"> </span><span class="mi">1</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-2x</span><span class="p">)</span><span class="w"> </span><span class="mi">2</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-3x</span><span class="p">)</span><span class="w"> </span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="nf">var</span><span class="p">(</span><span class="nv">--hero-image-4x</span><span class="p">)</span><span class="w"> </span><span class="mi">4</span><span class="n">x</span><span class="w"></span>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="p">);</span><span class="w"></span>
+<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<blockquote>
-<p>From package.json, change "main" to "app.js"</p>
-</blockquote>
-<h4 id="create-dockerfile">Create Dockerfile</h4>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>touch Dockerfile
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>touch .dockerignore
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># ignore node_modules from our repository because it will be installed</span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># from our docker image</span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nb">echo</span> <span class="s2">"node_modules"</span> &gt; .dockerignore
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>code Dockerfile
+<ul>
+<li>and I have a LinksFunction,. rendering a preload link which will also preload the image</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>{
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  rel: "preload",
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>  as: "image",
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>  href: heroBg4x,
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>  imagesrcset: `${heroBg} 1x, ${heroBg2x} 2x, ${heroBg3x} 3x, ${heroBg4x} 4x`,
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>}
 </code></pre></div>
+<ul>
+<li>this is the preload for the hero image using imagesrcset the browser will also use that srcset to choose the correct image which will match the image the CSS will ask for.</li>
+</ul>
 <blockquote>
-<p>Put this code in Dockerfile :</p>
+<p>Sure, the image-set is fine. But you run into the issue that the browser needs to parse your CSS first to get the image.</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:alpine</span>
+<ul>
+<li><strong>the preload tag solves that image is preloaded before the CSS is even loaded</strong></li>
+</ul>
+<blockquote>
+<p>the JS object? it's from a LinksFunction ?</p>
+</blockquote>
+<ul>
+<li>something like that, but with more links :</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>// it preload heroBg4x image from header
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="c"># Setup the working path (where all goes) inside the node image</span>
-<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/usr/src/app</span>
-<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>
-<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="c"># install package and install</span>
-<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">COPY</span><span class="w"> </span>package*.json ./
-<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="k">RUN</span><span class="w"> </span>npm install <span class="o">&amp;&amp;</span> npm cache clean --force
-<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a>
-<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="c"># copy all the current files in the Image working dir</span>
-<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="k">COPY</span><span class="w"> </span>. .
-<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a>
-<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c"># CREATE THE PORT</span>
-<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
-<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="c"># execute the process from the app</span>
-<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"node"</span><span class="p">,</span><span class="w"> </span><span class="s2">"app.js"</span><span class="w"> </span><span class="p">]</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>export let links: LinksFunction = () =&gt; {
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>  return [
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>    {
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a>      rel: "preload",
+<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a>      as: "image",
+<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a>      href: heroBg4x,
+<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a>      imagesrcset: `${heroBg} 1x, ${heroBg2x} 2x, ${heroBg3x} 3x, ${heroBg4x} 4x`,
+<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a>    }
+<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a>  ]
+<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a>}
 </code></pre></div>
-<h4 id="build-our-docker-image">Build our Docker Image</h4>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># .  : build from current directory</span>
-<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1"># -t : create the image test-app from the folder efx</span>
-<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>docker build . -t efx/test-app
-</code></pre></div>
-<h3 id="test-our-docker-image">Test our docker image</h3>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># Create container from test-app image on port 3000</span>
-<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>docker run -p <span class="m">3000</span>:8080 efx/test-app
+<p><a href="https://web.dev/preload-scanner/">Don't fight the browser preload scanner</a></p>
+<ul>
+<li>I have been testing this a lot for like a week to make that page load fast and don't have issues with the image not loading immediately</li>
+</ul>
+<blockquote>
+<p>Preload only works if you know <em>exactly</em> which of the images you need to preload, which in the case of a srcset or image set, defeats the purpose</p>
+</blockquote>
+<ul>
+<li>preload has a imagesrcset to let you preload based on an srcset. </li>
+</ul>
+<p>the browser only preload the same image from the srcset the CSS or img tag is gonna use later</p>
+<p><a href="https://web.dev/preload-responsive-images/">Preloading responsive images</a></p>
+<blockquote>
+<p>ok, so you use the link preloader, then the CSS uses whichever one fits. That all seems to work out well in my head</p>
+</blockquote>
+<ul>
+<li>
+<p>yeah, so the image is preloaded while CSS is also being downloaded, once CSS loads and is parsed it will chose and image which will be the same image the browser preloaded before if internet is slow it can still happen that the hero takes a while to show up but at least it doesn't need to wait for CSS to start loading.</p>
+</li>
+<li>
+<p>most of the work is exporting each variant of the image and ensuring its compressed what would be cool is to have a resource route where I could render <code>&lt;Image src="/path/to/the/file" /&gt;</code> and get the picture tag with multiple sources asking for different pixel densities</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">source</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>    <span class="na">srcSet</span><span class="o">=</span><span class="s">{`${mockupDesktop}</span> <span class="na">1x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop2x</span><span class="err">}</span> <span class="na">2x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop3x</span><span class="err">}</span> <span class="na">3x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop4x</span><span class="err">}</span> <span class="na">4x</span><span class="err">`}</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>    <span class="na">media</span><span class="o">=</span><span class="s">"(min-width: 768px)"</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>  <span class="p">/&gt;</span>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>  <span class="p">&lt;</span><span class="nt">source</span>
+<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>    <span class="na">srcSet</span><span class="o">=</span><span class="s">{`${mockupMobile}</span> <span class="na">1x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupMobile2x</span><span class="err">}</span> <span class="na">2x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupMobile3x</span><span class="err">}</span> <span class="na">3x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupMobile4x</span><span class="err">}</span> <span class="na">4x</span><span class="err">`}</span>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a>    <span class="na">media</span><span class="o">=</span><span class="s">"(max-width: 767px)"</span>
+<a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>  <span class="p">/&gt;</span>
+<a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a>  <span class="p">&lt;</span><span class="nt">img</span>
+<a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a>    <span class="na">src</span><span class="o">=</span><span class="s">{mockupDesktop4x}</span>
+<a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a>    <span class="na">srcSet</span><span class="o">=</span><span class="s">{`${mockupDesktop}</span> <span class="na">1x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop2x</span><span class="err">}</span> <span class="na">2x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop3x</span><span class="err">}</span> <span class="na">3x</span><span class="err">,</span> <span class="err">${</span><span class="na">mockupDesktop4x</span><span class="err">}</span> <span class="na">4x</span><span class="err">`}</span>
+<a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a>    <span class="na">height</span><span class="o">=</span><span class="s">{589.82}</span>
+<a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a>    <span class="na">width</span><span class="o">=</span><span class="s">{298.38}</span>
+<a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a>    <span class="na">alt</span><span class="o">=</span><span class="s">""</span>
+<a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a>    <span class="na">className</span><span class="o">=</span><span class="s">"max-w-48 md:max-w-72"</span>
+<a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a>    <span class="na">decoding</span><span class="o">=</span><span class="s">"async"</span>
+<a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a>  <span class="p">/&gt;</span>
+<a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
 </code></pre></div>
 <blockquote>
-<p>How the port work with Docker :</p>
+<p>for more dynamic Image, yes you need some service to optimize the images</p>
 </blockquote>
-<p><a class="glightbox" href="port.png"><img alt="" src="port.png" title="" width="428"/></a></p>
-<h1 id="docker-volume">Docker Volume</h1>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">#create a volume</span>
-<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>$ docker volume create data
-<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>
-<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1">#show volume liste</span>
-<a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>$ docker volume ls
-<a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>DRIVER   VOLUME NAME
-<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="nb">local</span>    data
-<a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a>
-<a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="c1">#show volume info</span>
-<a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a>$ docker volume inspect data
-<a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a>
-<a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="c1">#exemple with postgres sync data on volume</span>
-<a href="#__codelineno-6-13" id="__codelineno-6-13" name="__codelineno-6-13"></a>$ docker run -v postgres-data:/var/lib/postgresql/datap postgres
-<a href="#__codelineno-6-14" id="__codelineno-6-14" name="__codelineno-6-14"></a>
-<a href="#__codelineno-6-15" id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="c1">#sync data an external volume on disk without docker volume</span>
-<a href="#__codelineno-6-16" id="__codelineno-6-16" name="__codelineno-6-16"></a>$ docker run --mount <span class="se">\</span>
-<a href="#__codelineno-6-17" id="__codelineno-6-17" name="__codelineno-6-17"></a>    <span class="nv">type</span><span class="o">=</span>bind,source<span class="o">=</span>/home/exyzt/Documents,target<span class="o">=</span>/var/lib/postgresql/data
-</code></pre></div>
-<p><a class="glightbox" href="../docker-volume.png"><img alt="" src="../docker-volume.png"/></a></p>
-<h1 id="docker-compose">Docker compose</h1>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">#list all compose command available</span>
-<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>
-<a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>$ docker compose console
-<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>
-<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="c1">#create the compose file</span>
-<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a>
-<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a>$ touch docker-compose.yml :
-<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a>
-<a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a>cat <span class="s">&lt;&lt;EOF &gt; docker-compose.yml</span>
-<a href="#__codelineno-7-10" id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="s">services:</span>
-<a href="#__codelineno-7-11" id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="s">    app:</span>
-<a href="#__codelineno-7-12" id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="s">        build: .</span>
-<a href="#__codelineno-7-13" id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="s">        depends_on:</span>
-<a href="#__codelineno-7-14" id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="s">            - postgres</span>
-<a href="#__codelineno-7-15" id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="s">        environment:</span>
-<a href="#__codelineno-7-16" id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="s">            DATABASE_URL: postgres://user:pass@postgres:5432/db</span>
-<a href="#__codelineno-7-17" id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="s">        ports:</span>
-<a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="s">            - "3000:8080"</span>
-<a href="#__codelineno-7-19" id="__codelineno-7-19" name="__codelineno-7-19"></a>
-<a href="#__codelineno-7-20" id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="s">    postgres:</span>
-<a href="#__codelineno-7-21" id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="s">        # connect to database postgres @ localhost:5432</span>
-<a href="#__codelineno-7-22" id="__codelineno-7-22" name="__codelineno-7-22"></a><span class="s">        # on pg_db Database with user: efx, pass: 1234</span>
-<a href="#__codelineno-7-23" id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="s">        image: postgres:alpine</span>
-<a href="#__codelineno-7-24" id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="s">         environment:</span>
-<a href="#__codelineno-7-25" id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="s">            POSTGRES_PASSWORD: 1234</span>
-<a href="#__codelineno-7-26" id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="s">            POSTGRES_DB: pg_db</span>
-<a href="#__codelineno-7-27" id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="s">            POSTGRES_USER: efx</span>
-<a href="#__codelineno-7-28" id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="s">    ports:</span>
-<a href="#__codelineno-7-29" id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="s">      - "5432:5432"</span>
-<a href="#__codelineno-7-30" id="__codelineno-7-30" name="__codelineno-7-30"></a><span class="s">    volumes:</span>
-<a href="#__codelineno-7-31" id="__codelineno-7-31" name="__codelineno-7-31"></a><span class="s">      - volumePgData:/var/lib/postgresql/data</span>
-<a href="#__codelineno-7-32" id="__codelineno-7-32" name="__codelineno-7-32"></a>
-<a href="#__codelineno-7-33" id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="s">volumes:</span>
-<a href="#__codelineno-7-34" id="__codelineno-7-34" name="__codelineno-7-34"></a><span class="s">    volumePgData:</span>
-<a href="#__codelineno-7-35" id="__codelineno-7-35" name="__codelineno-7-35"></a><span class="s">EOF</span>     
-<a href="#__codelineno-7-36" id="__codelineno-7-36" name="__codelineno-7-36"></a>
-<a href="#__codelineno-7-37" id="__codelineno-7-37" name="__codelineno-7-37"></a><span class="c1">#Run our compose</span>
-<a href="#__codelineno-7-38" id="__codelineno-7-38" name="__codelineno-7-38"></a>$ docker-compose up
-</code></pre></div>
-<h3 id="compose-commands">Compose commands</h3>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1">#Stop the container(s) using the following command:</span>
-<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>docker-compose down
-<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>
-<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="c1">#Delete all containers using the following command:</span>
-<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>docker rm -f <span class="k">$(</span>docker ps -a -q<span class="k">)</span>
-<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a>
-<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="c1">#Delete all volumes using the following command:</span>
-<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>docker volume rm <span class="k">$(</span>docker volume ls -q<span class="k">)</span>
-<a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a>
-<a href="#__codelineno-8-10" id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="c1">#Restart the containers using the following command:</span>
-<a href="#__codelineno-8-11" id="__codelineno-8-11" name="__codelineno-8-11"></a>docker-compose up -d
-</code></pre></div>
+<ul>
+<li>
+<p>you need the image component to send the URL to an API the optimization needs to happen at runtime but the response needs to have a cache-control header and the API needs to be behind a CDN so you only really do it once per image</p>
+</li>
+<li>
+<p>Cloudflare has an image optimization service that works this way <a href="https://developers.cloudflare.com/images" title="https://developers.cloudflare.com/images">Cloudflare Image Optimization · Cloudflare Image Optimization docs</a></p>
+</li>
+</ul>
+<p>Next.js Image component does that too, you could use Cloudinary for that too but this one becomes expensive and they charge the bandwidth too</p>
 </article>
 </div>
 </div>
@@ -748,7 +704,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Docker Start" class="md-footer__link md-footer__link--prev" href="../docker-start/" rel="prev">
+<a aria-label="Previous: Remix with Fly" class="md-footer__link md-footer__link--prev" href="../remix-fly/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -757,21 +713,8 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Docker Start
+              Remix with Fly
             </div>
-</div>
-</a>
-<a aria-label="Next: Create a dockerfile/ex2" class="md-footer__link md-footer__link--next" href="../docker-exercice2/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Create a dockerfile/ex2
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
 </div>
 </a>
 </nav>

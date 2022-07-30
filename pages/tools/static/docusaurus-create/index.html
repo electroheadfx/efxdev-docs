@@ -122,7 +122,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../">
+<a class="md-tabs__link md-tabs__link--active" href="../../">
         Tools
       </a>
 </li>
@@ -189,13 +189,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_4">
-          JS
+          Javascript
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="JS" class="md-nav" data-md-level="2">
+<nav aria-label="Javascript" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_4">
 <span class="md-nav__icon md-icon"></span>
-          JS
+          Javascript
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -214,8 +214,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../">Tools</a>
 <label for="__nav_3">
@@ -230,10 +230,12 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_2">
-          Docker
-          <span class="md-nav__icon md-icon"></span>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../docker/">Docker</a>
+<label for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-label="Docker" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
@@ -267,6 +269,128 @@
 <a class="md-nav__link" href="../../node/">
         Node
       </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Static site</a>
+<label for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Static site" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+          Static site
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Create doc with Docusaurus in GitLab Pages
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Create doc with Docusaurus in GitLab Pages
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-project">
+    Custom project
+  </a>
+<nav aria-label="Custom project" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-are-in-docusaurusconfigjs-file">
+    All are in docusaurus.config.js file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-the-style-with-srccsscustomcss">
+    Change the style with : src/css/custom.css
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-doc-content">
+    Change Doc content
+  </a>
+<nav aria-label="Change Doc content" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#supress-blog">
+    Supress Blog
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#produce-content">
+    Produce content
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-a-extension-theme-syntax-add-on-eg-php">
+    Add a extension theme syntax add-on, e.g. php
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gitlab-pages">
+    GitLab Pages
+  </a>
+<nav aria-label="GitLab Pages" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-the-repo">
+    Create the repo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-a-pipe-deployment">
+    Add a pipe deployment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#la-branche-pages">
+    La branche pages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adpatons-le-projet-a-notre-depot-gitlab">
+    Adpatons le projet à notre dépot GitLab
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bonus-ajoutons-un-moteur-de-recherche">
+    BONUS : Ajoutons un moteur de recherche
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusions">
+    Conclusions
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mkdocs-material/">
+        Install mkdocs-material
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../services/">
@@ -413,12 +537,66 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../advanced/typescript/classes/">
-        Les classes
+        Class
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../advanced/typescript/react/">
         Typescript with react
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../advanced/react/">React</a>
+<label for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="React" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          React
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/react/react-fetching/">
+        Fetching in react
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/react/useRef-or-useState/">
+        useRef or useState
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../advanced/remix/">Remix</a>
+<label for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Remix" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Remix
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/remix/remix-fly/">
+        Remix with Fly
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/remix/discord-discussions/">
+        Discord Discussions
       </a>
 </li>
 </ul>
@@ -861,6 +1039,34 @@
           </a>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Static Site Generators" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Static Site Generators
+            </div>
+</div>
+</a>
+<a aria-label="Next: Install mkdocs-material" class="md-footer__link md-footer__link--next" href="../mkdocs-material/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Install mkdocs-material
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
