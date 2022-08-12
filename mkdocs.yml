@@ -248,10 +248,10 @@ nav:
         - pages/react/typescript/advanced/types-react-ap.md
         - pages/react/typescript/advanced/utility-types.md
       - Basic:
+        - pages/react/typescript/basic/index.md
         - pages/react/typescript/basic/editor-integration.md
         - pages/react/typescript/basic/examples.md
         - pages/react/typescript/basic/linting.md
-        - pages/react/typescript/basic/setup.md
         - pages/react/typescript/basic/useful-hooks.md
         - Getting-started:
           - pages/react/typescript/basic/getting-started/basic-type-examples.md
