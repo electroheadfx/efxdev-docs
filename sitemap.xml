@@ -221,6 +221,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/editor-integration/</loc>
          <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
@@ -232,11 +237,6 @@
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/linting/</loc>
-         <lastmod>2022-08-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/setup/</loc>
          <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -7,20 +7,20 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Efxdev docs, exercices, tips for creative modern web platform standard with modern tools, design system resilient UX, progressive enhancement, optimistic UI and accessibility" name="description"/>
 <meta content="Laurent Marques" name="author"/>
-<link href="https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/setup/" rel="canonical"/>
-<link href="../../../../../assets/favicon/favicon.png" rel="icon"/>
+<link href="https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/" rel="canonical"/>
+<link href="../../../../assets/favicon/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.3.9" name="generator"/>
 <title>Setup in React - efxdev-docs</title>
-<link href="../../../../../assets/stylesheets/main.css" rel="stylesheet"/>
-<link href="../../../../../assets/stylesheets/palette.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v7.736a.75.75 0 1 0 1.5 0V1.75A1.75 1.75 0 0 0 11.25 0h-8.5A1.75 1.75 0 0 0 1 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 0 0 0-1.5H2.75a.25.25 0 0 1-.25-.25V1.75zM4.75 4a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5zM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75zm11.774 3.537a.75.75 0 0 0-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 0 0-1.062 1.058l1.943 1.95a.75.75 0 0 0 1.055.008l4.557-4.45z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm6.5-.25A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.489 4.489 0 0 1-.563-1.191 3.833 3.833 0 0 1-.05-2.063 4.636 4.636 0 0 1-2.025-.293.75.75 0 1 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.748.748 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.404 2.404 0 0 1-.507-.441 3.063 3.063 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.753.753 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768a85.08 85.08 0 0 0-.317-.265c-.814-.68-1.75-1.462-2.692-2.619a3.74 3.74 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 0 1 9 6.25c0 .177-.04.264-.077.318a.956.956 0 0 1-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 0 0-.313.195 2.416 2.416 0 0 0-.692.661.75.75 0 0 0 1.248.832.956.956 0 0 1 .276-.245 6.3 6.3 0 0 1 .26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 0 0 8 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 1 0 1.342.67z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575L6.457 1.047zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.25a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0v-2.5z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 0 0-.01.004L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.02.02 0 0 0-.004-.009.02.02 0 0 0-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.492 3.492 0 0 1 2.441 0l.999-1a.75.75 0 1 1 1.06 1.061l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.013 5.013 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.684 1.684 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06zM6.173 5h3.654A.173.173 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173zM5.25 6.5a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75h-5.5z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H1.75zm4 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zm0 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zM2.5 7.75a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6z"/></svg>');}</style>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../../../../assets/stylesheets/grid-cards.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../../assets/stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/grid-cards.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="orange" data-md-color-primary="lime" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -34,7 +34,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="efxdev-docs" class="md-header__button md-logo" data-md-component="logo" href="/efxdev-docs/" title="efxdev-docs">
-<img alt="logo" src="../../../../../assets/images/efx-white.svg"/>
+<img alt="logo" src="../../../../assets/images/efx-white.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -117,22 +117,22 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../basis/">
+<a class="md-tabs__link" href="../../../basis/">
         Basis
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../advanced/">
+<a class="md-tabs__link" href="../../../advanced/">
         Advanced
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../../">
+<a class="md-tabs__link md-tabs__link--active" href="../../">
         React
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../tools/">
+<a class="md-tabs__link" href="../../../tools/">
         Tools
       </a>
 </li>
@@ -146,8 +146,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="efxdev-docs" class="md-nav__button md-logo" data-md-component="logo" href="../../../../.." title="efxdev-docs">
-<img alt="logo" src="../../../../../assets/images/efx-white.svg"/>
+<a aria-label="efxdev-docs" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="efxdev-docs">
+<img alt="logo" src="../../../../assets/images/efx-white.svg"/>
 </a>
     efxdev-docs
   </label>
@@ -170,7 +170,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../basis/">Basis</a>
+<a href="../../../basis/">Basis</a>
 <label for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -182,24 +182,24 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/es6/">
+<a class="md-nav__link" href="../../../basis/es6/">
         Es6
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/events/">
+<a class="md-nav__link" href="../../../basis/events/">
         Events in js
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/html/">
+<a class="md-nav__link" href="../../../basis/html/">
         Modern HTML5
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../basis/css/">CSS</a>
+<a href="../../../basis/css/">CSS</a>
 <label for="__nav_2_5">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -211,17 +211,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/css/fundamentals/">
+<a class="md-nav__link" href="../../../basis/css/fundamentals/">
         The fundamentals in CSS
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/css/css-units/">
+<a class="md-nav__link" href="../../../basis/css/css-units/">
         CSS Units
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/css/references/">
+<a class="md-nav__link" href="../../../basis/css/references/">
         References
       </a>
 </li>
@@ -231,7 +231,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../basis/javascript/">javascript</a>
+<a href="../../../basis/javascript/">javascript</a>
 <label for="__nav_2_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -243,12 +243,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/javascript/js-basics/">
+<a class="md-nav__link" href="../../../basis/javascript/js-basics/">
         Javascript basics
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../basis/javascript/js-loop/">
+<a class="md-nav__link" href="../../../basis/javascript/js-loop/">
         Js loop
       </a>
 </li>
@@ -261,7 +261,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../advanced/">Advanced</a>
+<a href="../../../advanced/">Advanced</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -275,7 +275,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../advanced/javascript/">Javascript</a>
+<a href="../../../advanced/javascript/">Javascript</a>
 <label for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -287,82 +287,82 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/async-await/">
+<a class="md-nav__link" href="../../../advanced/javascript/async-await/">
         Async await
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/callback/">
+<a class="md-nav__link" href="../../../advanced/javascript/callback/">
         Callback
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/class/">
+<a class="md-nav__link" href="../../../advanced/javascript/class/">
         Class
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/closures/">
+<a class="md-nav__link" href="../../../advanced/javascript/closures/">
         Closures
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/es6-utilities/">
+<a class="md-nav__link" href="../../../advanced/javascript/es6-utilities/">
         Es6 utilities
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/reduce-cases/">
+<a class="md-nav__link" href="../../../advanced/javascript/reduce-cases/">
         Reduce cases
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/currying/">
+<a class="md-nav__link" href="../../../advanced/javascript/currying/">
         Currying
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/generator/">
+<a class="md-nav__link" href="../../../advanced/javascript/generator/">
         Generator
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/iterator/">
+<a class="md-nav__link" href="../../../advanced/javascript/iterator/">
         Iterables &amp; Iterators
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/map/">
+<a class="md-nav__link" href="../../../advanced/javascript/map/">
         Map object
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/promise/">
+<a class="md-nav__link" href="../../../advanced/javascript/promise/">
         Promise intro
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/set/">
+<a class="md-nav__link" href="../../../advanced/javascript/set/">
         Set
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/setinterval/">
+<a class="md-nav__link" href="../../../advanced/javascript/setinterval/">
         Timeouts &amp; Intervals
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/this/">
+<a class="md-nav__link" href="../../../advanced/javascript/this/">
         This
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/this-examples/">
+<a class="md-nav__link" href="../../../advanced/javascript/this-examples/">
         This examples
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/javascript/timeout/">
+<a class="md-nav__link" href="../../../advanced/javascript/timeout/">
         Timeout
       </a>
 </li>
@@ -372,7 +372,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../advanced/remix/">Remix</a>
+<a href="../../../advanced/remix/">Remix</a>
 <label for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -384,12 +384,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/remix/remix-fly/">
+<a class="md-nav__link" href="../../../advanced/remix/remix-fly/">
         Remix with Fly
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../advanced/remix/discord-discussions/">
+<a class="md-nav__link" href="../../../advanced/remix/discord-discussions/">
         Discord Discussions
       </a>
 </li>
@@ -402,7 +402,7 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../">React</a>
+<a href="../../">React</a>
 <label for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -414,19 +414,19 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../react-fetching/">
+<a class="md-nav__link" href="../../react-fetching/">
         Fetching in react
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../useRef-or-useState/">
+<a class="md-nav__link" href="../../useRef-or-useState/">
         useRef or useState
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../">Typescript</a>
+<a href="../">Typescript</a>
 <label for="__nav_4_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -440,7 +440,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" id="__nav_4_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/">Advanced</a>
+<a href="../advanced/">Advanced</a>
 <label for="__nav_4_4_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -452,27 +452,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/misc-concerns/">
+<a class="md-nav__link" href="../advanced/misc-concerns/">
         Misc. Concerns
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/patterns_by_usecase/">
+<a class="md-nav__link" href="../advanced/patterns_by_usecase/">
         Useful Patterns
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/patterns_by_version/">
+<a class="md-nav__link" href="../advanced/patterns_by_version/">
         Useful Patterns
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/types-react-ap/">
+<a class="md-nav__link" href="../advanced/types-react-ap/">
         @types
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/utility-types/">
+<a class="md-nav__link" href="../advanced/utility-types/">
         Utility Types
       </a>
 </li>
@@ -481,10 +481,12 @@
 </li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" id="__nav_4_4_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4_4_3">
-          Basic
-          <span class="md-nav__icon md-icon"></span>
+<div class="md-nav__link md-nav__link--index md-nav__link--active">
+<a href="./">Basic</a>
+<label for="__nav_4_4_3">
+<span class="md-nav__icon md-icon"></span>
 </label>
+</div>
 <nav aria-label="Basic" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_4_4_3">
 <span class="md-nav__icon md-icon"></span>
@@ -492,60 +494,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../editor-integration/">
+<a class="md-nav__link" href="editor-integration/">
         Editor Tooling
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../examples/">
+<a class="md-nav__link" href="examples/">
         Example App
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../linting/">
+<a class="md-nav__link" href="linting/">
         Linting
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Setup in React
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-        Setup in React
-      </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#prerequisites">
-    Prerequisites
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vs-code-extensions">
-    VS Code Extensions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#react-typescript-starter-kits">
-    React + TypeScript Starter Kits
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#video-tutorial">
-    Video Tutorial
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../useful-hooks/">
+<a class="md-nav__link" href="useful-hooks/">
         Useful Hooks
       </a>
 </li>
@@ -562,57 +526,57 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/basic-type-examples/">
+<a class="md-nav__link" href="getting-started/basic-type-examples/">
         Typing with Props
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/class-components/">
+<a class="md-nav__link" href="getting-started/class-components/">
         Class Components
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/concurrent/">
+<a class="md-nav__link" href="getting-started/concurrent/">
         Concurrent/Suspense
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/context/">
+<a class="md-nav__link" href="getting-started/context/">
         Context
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/default-props/">
+<a class="md-nav__link" href="getting-started/default-props/">
         Typing defaultProps
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/error-boundaries/">
+<a class="md-nav__link" href="getting-started/error-boundaries/">
         Error Boundaries
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/forms-and-events/">
+<a class="md-nav__link" href="getting-started/forms-and-events/">
         Forms and Events
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/forward-create-ref/">
+<a class="md-nav__link" href="getting-started/forward-create-ref/">
         forwardRef/createRef
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/function-components/">
+<a class="md-nav__link" href="getting-started/function-components/">
         Function Components
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/hooks/">
+<a class="md-nav__link" href="getting-started/hooks/">
         Hooks
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started/portals/">
+<a class="md-nav__link" href="getting-started/portals/">
         Portals
       </a>
 </li>
@@ -632,17 +596,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../recommended/codebases/">
+<a class="md-nav__link" href="recommended/codebases/">
         Recommended React
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../recommended/resources/">
+<a class="md-nav__link" href="recommended/resources/">
         TypeScript resources
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../recommended/talks/">
+<a class="md-nav__link" href="recommended/talks/">
         Talks
       </a>
 </li>
@@ -662,37 +626,37 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/learn-ts/">
+<a class="md-nav__link" href="troubleshooting/learn-ts/">
         Learn TypeScript
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/non-ts-files/">
+<a class="md-nav__link" href="troubleshooting/non-ts-files/">
         Troubleshooting
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/official-typings-bugs/">
+<a class="md-nav__link" href="troubleshooting/official-typings-bugs/">
         Fixing bugs
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/operators/">
+<a class="md-nav__link" href="troubleshooting/operators/">
         Troubleshooting: Operators
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/ts-config/">
+<a class="md-nav__link" href="troubleshooting/ts-config/">
         Troubleshooting: tsconfig
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/types/">
+<a class="md-nav__link" href="troubleshooting/types/">
         Troubleshooting: Types
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/utilities/">
+<a class="md-nav__link" href="troubleshooting/utilities/">
         Troubleshooting: Utilities
       </a>
 </li>
@@ -705,7 +669,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_4" id="__nav_4_4_4" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../hoc/">Hoc</a>
+<a href="../hoc/">Hoc</a>
 <label for="__nav_4_4_4">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -717,17 +681,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../hoc/excluding-props/">
+<a class="md-nav__link" href="../hoc/excluding-props/">
         Section 2: Excluding Props
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../hoc/full-example/">
+<a class="md-nav__link" href="../hoc/full-example/">
         Full HOC Example
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../hoc/react-hoc-docs/">
+<a class="md-nav__link" href="../hoc/react-hoc-docs/">
         React HOC docs
       </a>
 </li>
@@ -743,7 +707,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../tools/">Tools</a>
+<a href="../../../tools/">Tools</a>
 <label for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -757,7 +721,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../tools/typescript/">Typescript</a>
+<a href="../../../tools/typescript/">Typescript</a>
 <label for="__nav_5_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -769,27 +733,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/typescript/start/">
+<a class="md-nav__link" href="../../../tools/typescript/start/">
         TypeScript Start
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/typescript/advanced/">
+<a class="md-nav__link" href="../../../tools/typescript/advanced/">
         TypeScript Avanced
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/typescript/conditional/">
+<a class="md-nav__link" href="../../../tools/typescript/conditional/">
         Conditional type
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/typescript/classes/">
+<a class="md-nav__link" href="../../../tools/typescript/classes/">
         Class
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/typescript/introreact/">
+<a class="md-nav__link" href="../../../tools/typescript/introreact/">
         Intro with react
       </a>
 </li>
@@ -799,7 +763,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../tools/docker/">Docker</a>
+<a href="../../../tools/docker/">Docker</a>
 <label for="__nav_5_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -811,17 +775,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/docker/docker-start/">
+<a class="md-nav__link" href="../../../tools/docker/docker-start/">
         Docker Start
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/docker/docker-exercice1/">
+<a class="md-nav__link" href="../../../tools/docker/docker-exercice1/">
         Create a dockerfile/ex1
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/docker/docker-exercice2/">
+<a class="md-nav__link" href="../../../tools/docker/docker-exercice2/">
         Create a dockerfile/ex2
       </a>
 </li>
@@ -829,19 +793,19 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/git/">
+<a class="md-nav__link" href="../../../tools/git/">
         Git Master commands
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/node/">
+<a class="md-nav__link" href="../../../tools/node/">
         Node
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../../tools/static/">Static site</a>
+<a href="../../../tools/static/">Static site</a>
 <label for="__nav_5_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -853,12 +817,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/static/docusaurus-create/">
+<a class="md-nav__link" href="../../../tools/static/docusaurus-create/">
         Create doc with Docusaurus in GitLab Pages
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/static/mkdocs-material/">
+<a class="md-nav__link" href="../../../tools/static/mkdocs-material/">
         Install mkdocs-material
       </a>
 </li>
@@ -866,7 +830,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tools/services/">
+<a class="md-nav__link" href="../../../tools/services/">
         Services
       </a>
 </li>
@@ -914,7 +878,7 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/react/typescript/basic/setup.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/react/typescript/basic/index.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1>Setup in React</h1>
@@ -982,7 +946,7 @@ Manual setup:
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Linting" class="md-footer__link md-footer__link--prev" href="../linting/" rel="prev">
+<a aria-label="Previous: Utility Types" class="md-footer__link md-footer__link--prev" href="../advanced/utility-types/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -991,17 +955,17 @@ Manual setup:
 <span class="md-footer__direction">
                 Previous
               </span>
-              Linting
+              Utility Types
             </div>
 </div>
 </a>
-<a aria-label="Next: Useful Hooks" class="md-footer__link md-footer__link--next" href="../useful-hooks/" rel="next">
+<a aria-label="Next: Editor Tooling" class="md-footer__link md-footer__link--next" href="editor-integration/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Useful Hooks
+              Editor Tooling
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -1034,7 +998,7 @@ Manual setup:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate", "navigation.tabs", "navigation.top", "header.autohide", "navigation.indexes"], "search": "../../../../../assets/javascripts/workers/search.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="../../../../../assets/javascripts/bundle.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate", "navigation.tabs", "navigation.top", "header.autohide", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
