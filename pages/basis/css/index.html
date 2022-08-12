@@ -20,6 +20,7 @@
 <link href="../../../assets/stylesheets/extra.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/grid-cards.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../overrides/assets/stylesheets/main.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="orange" data-md-color-primary="lime" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -27,9 +28,18 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#css-bases">
+<a class="md-skip" href="#toto">
           Skip to content
         </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<a href="http://efxdesign.fr" target="_blank">
+    Graphic and design stuff on <strong>efxdesign.fr</strong>
+</a>
+</div>
+</aside>
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
@@ -122,13 +132,18 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../tools/">
-        Tools
+<a class="md-tabs__link" href="../../advanced/">
+        Advanced
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../advanced/">
-        Advanced
+<a class="md-tabs__link" href="../../react/">
+        React
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+        Tools
       </a>
 </li>
 </ul>
@@ -176,63 +191,74 @@
           Basis
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          CSS
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-        CSS
+<li class="md-nav__item">
+<a class="md-nav__link" href="../es6/">
+        Es6
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../events/">
+        Events in js
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../html/">
+        Modern HTML5
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index md-nav__link--active">
+<a href="./">CSS</a>
+<label for="__nav_2_5">
 <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+</label>
+</div>
+<nav aria-label="CSS" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#css-selector">
-    CSS Selector
-  </a>
+<a class="md-nav__link" href="fundamentals/">
+        The fundamentals in CSS
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#flexbox">
-    FlexBox
-  </a>
+<a class="md-nav__link" href="css-units/">
+        CSS Units
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#grid">
-    Grid
-  </a>
+<a class="md-nav__link" href="references/">
+        References
+      </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../html/">
-        HTML
-      </a>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_4">
-          Javascript
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Javascript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_4">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../javascript/">javascript</a>
+<label for="__nav_2_6">
 <span class="md-nav__icon md-icon"></span>
-          Javascript
+</label>
+</div>
+<nav aria-label="javascript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          javascript
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../js-basics/">
+<a class="md-nav__link" href="../javascript/js-basics/">
         Javascript basics
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../js-loop/">
+<a class="md-nav__link" href="../javascript/js-loop/">
         Js loop
       </a>
 </li>
@@ -245,118 +271,27 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../tools/">Tools</a>
+<a href="../../advanced/">Advanced</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="Tools" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
-          Tools
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../tools/docker/">Docker</a>
-<label for="__nav_3_2">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Docker" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_2">
-<span class="md-nav__icon md-icon"></span>
-          Docker
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-start/">
-        Docker Start
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-exercice1/">
-        Create a dockerfile/ex1
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-exercice2/">
-        Create a dockerfile/ex2
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/git/">
-        Git Master commands
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/node/">
-        Node
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../tools/static/">Static site</a>
-<label for="__nav_3_5">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Static site" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_5">
-<span class="md-nav__icon md-icon"></span>
-          Static site
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/static/docusaurus-create/">
-        Create doc with Docusaurus in GitLab Pages
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/static/mkdocs-material/">
-        Install mkdocs-material
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/services/">
-        Services
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/">Advanced</a>
-<label for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
 <nav aria-label="Advanced" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
           Advanced
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../advanced/javascript/">Javascript</a>
-<label for="__nav_4_2">
+<label for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
 <nav aria-label="Javascript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_2">
+<label class="md-nav__title" for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
           Javascript
         </label>
@@ -445,79 +380,15 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/typescript/">Typescript</a>
-<label for="__nav_4_3">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Typescript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_3">
-<span class="md-nav__icon md-icon"></span>
-          Typescript
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/basis/">
-        Les bases de TS
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/advanced/">
-        TypeScript Avancé
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/classes/">
-        Class
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/react/">
-        Typescript with react
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/react/">React</a>
-<label for="__nav_4_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="React" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_4">
-<span class="md-nav__icon md-icon"></span>
-          React
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/react/react-fetching/">
-        Fetching in react
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/react/useRef-or-useState/">
-        useRef or useState
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../advanced/remix/">Remix</a>
-<label for="__nav_4_5">
+<label for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
 <nav aria-label="Remix" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_5">
+<label class="md-nav__title" for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
           Remix
         </label>
@@ -538,12 +409,453 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/">React</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="React" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          React
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/react-fetching/">
+        Fetching in react
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/useRef-or-useState/">
+        useRef or useState
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/">Typescript</a>
+<label for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Typescript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Typescript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" id="__nav_4_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/advanced/">Advanced</a>
+<label for="__nav_4_4_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Advanced" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_2">
+<span class="md-nav__icon md-icon"></span>
+          Advanced
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/misc-concerns/">
+        Misc. Concerns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/patterns_by_usecase/">
+        Useful Patterns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/patterns_by_version/">
+        Useful Patterns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/types-react-ap/">
+        @types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/utility-types/">
+        Utility Types
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" id="__nav_4_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3">
+          Basic
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Basic" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Basic
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/editor-integration/">
+        Editor Tooling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/examples/">
+        Example App
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/linting/">
+        Linting
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/setup/">
+        Setup in React
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/useful-hooks/">
+        Useful Hooks
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_6" id="__nav_4_4_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_6">
+          Getting-started
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Getting-started" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_6">
+<span class="md-nav__icon md-icon"></span>
+          Getting-started
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/basic-type-examples/">
+        Typing with Props
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/class-components/">
+        Class Components
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/concurrent/">
+        Concurrent/Suspense
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/context/">
+        Context
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/default-props/">
+        Typing defaultProps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/error-boundaries/">
+        Error Boundaries
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/forms-and-events/">
+        Forms and Events
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/forward-create-ref/">
+        forwardRef/createRef
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/function-components/">
+        Function Components
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/hooks/">
+        Hooks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/portals/">
+        Portals
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_7" id="__nav_4_4_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_7">
+          Recommended
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Recommended" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_7">
+<span class="md-nav__icon md-icon"></span>
+          Recommended
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/codebases/">
+        Recommended React
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/resources/">
+        TypeScript resources
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/talks/">
+        Talks
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_8" id="__nav_4_4_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_8">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Troubleshooting" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_8">
+<span class="md-nav__icon md-icon"></span>
+          Troubleshooting
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/learn-ts/">
+        Learn TypeScript
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/non-ts-files/">
+        Troubleshooting
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/official-typings-bugs/">
+        Fixing bugs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/operators/">
+        Troubleshooting: Operators
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/ts-config/">
+        Troubleshooting: tsconfig
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/types/">
+        Troubleshooting: Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/utilities/">
+        Troubleshooting: Utilities
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_4" id="__nav_4_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/hoc/">Hoc</a>
+<label for="__nav_4_4_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Hoc" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Hoc
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/excluding-props/">
+        Section 2: Excluding Props
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/full-example/">
+        Full HOC Example
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/react-hoc-docs/">
+        React HOC docs
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/">Tools</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/typescript/">Typescript</a>
+<label for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Typescript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Typescript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/start/">
+        TypeScript Start
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/advanced/">
+        TypeScript Avanced
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/conditional/">
+        Conditional type
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/classes/">
+        Class
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/introreact/">
+        Intro with react
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/docker/">Docker</a>
+<label for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Docker" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Docker
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-start/">
+        Docker Start
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice1/">
+        Create a dockerfile/ex1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice2/">
+        Create a dockerfile/ex2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/git/">
+        Git Master commands
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/node/">
+        Node
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/static/">Static site</a>
+<label for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Static site" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Static site
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/static/docusaurus-create/">
+        Create doc with Docusaurus in GitLab Pages
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/static/mkdocs-material/">
+        Install mkdocs-material
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/services/">
+        Services
+      </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -553,18 +865,8 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#css-selector">
-    CSS Selector
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#flexbox">
-    FlexBox
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#grid">
-    Grid
+<a class="md-nav__link" href="#coco">
+    coco
   </a>
 </li>
 </ul>
@@ -574,133 +876,12 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/basis/css.md" title="Edit this page">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
-</a>
-<h1 id="css-bases">CSS bases</h1>
-<h4 id="css-selector">CSS Selector</h4>
-<p>📑 Le lien vers la doc <a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Selectors">Sélecteurs CSS - Apprendre le développement web | MDN</a></p>
-<h4 id="flexbox">FlexBox</h4>
-<p>📑 Le lien vers la doc <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox | CSS-Tricks - CSS-Tricks</a></p>
-<h4 id="grid">Grid</h4>
-<p>📑 Le lien vers la doc <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid | CSS-Tricks - CSS-Tricks</a></p>
-<h1 id="css-fondamentals">CSS Fondamentals</h1>
-<h4 id="css-calc-function">CSS Calc function</h4>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">div</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">50</span><span class="kt">px</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nt">div</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<hr/>
-<h4 id="css-units">CSS Units</h4>
-<h6 id="px-absolute">px (absolute)</h6>
-<p><em>Pretty self explanatory absolute lenght in pixel</em></p>
-<blockquote>
-<p><strong>Avoid using <code>pixel</code> for font-sizes. Use mostly for small details like border and shadow.</strong></p>
+<h1>CSS</h1>
+<img alt="efx whirl web" class="whirl" src="../../../assets/images/whirl-web.svg"/>
+<div class="grid cards">
 <ul>
-<li>
-<p>Fixed in size</p>
-</li>
-<li>
-<p>Not responsive</p>
-</li>
-<li>
-<p>Overrides user's browser preference</p>
-</li>
 </ul>
-</blockquote>
-<hr/>
-<h6 id="relative">% (relative)</h6>
-<p><em>Relative to the value of parent element. 100% is the width of the parent element</em></p>
-<blockquote>
-<p><strong>I recommend using percentages for layouts and width/height. For example, laying out links on navbar, placing images inside a div ...</strong></p>
-<ul>
-<li>
-<p>Size is defined as percentage of another value (mostly parent element)</p>
-</li>
-<li>
-<p>Sometimes size is defined as percentage of the element itself</p>
-</li>
-</ul>
-</blockquote>
-<hr/>
-<h6 id="em-relative">em (relative)</h6>
-<p><em>Relative to the font-size of the parent element.</em></p>
-<blockquote>
-<p><strong>You can use <code>em</code> for font-size and margin/padding. Use <code>em</code> when you want to adjust margin/padding based on that element's font-size</strong> <em>(if you font-sized is big, you maybe want bigger spacing)</em></p>
-<ul>
-<li>
-<p>Changes behavior based on property</p>
-</li>
-<li>
-<p>1 em = parent font-size</p>
-</li>
-<li>
-<p>if parent doesn't have a size, defaults to 16 px (body)</p>
-</li>
-</ul>
-</blockquote>
-<hr/>
-<h6 id="rem-relative">rem (relative)</h6>
-<p><em>Relative to the font-size of the root element</em></p>
-<blockquote>
-<p><strong>You can also use <code>rem</code> for font-size and margin/padding.</strong> <em><code>rem</code>is easier to work than <code>em</code> because its more consistent.</em></p>
-<ul>
-<li>
-<p>Relative to the root HTML, no matter what (default is 16px)</p>
-</li>
-<li>
-<p>You can change the root HTML size. For exemple if you change it to 20px,
-  1 rem will always 20 px.</p>
-</li>
-</ul>
-</blockquote>
-<hr/>
-<h6 id="vw-vh-relative">vw / vh (relative)</h6>
-<p><em>Equal to 1% of the height of the browser window size</em></p>
-<blockquote>
-<p><strong>**vh/vh are relative to the width/height of the browser window. 100vw means full width of the screen. Use vw/vh for bigger layouts, like background.</strong></p>
-<ul>
-<li>Useful for responsive website because everything scales.</li>
-</ul>
-</blockquote>
-<h6 id="dvh-lvh-svh-relative">dvh / lvh / svh (relative)</h6>
-<p><em>For mobile screen height</em></p>
-<p><a class="glightbox" href="mobile.jpeg"><img alt="mobile.jpeg" src="mobile.jpeg" title="" width="435"/></a></p>
-<hr/>
-<h4 id="css-variables">CSS Variables</h4>
-<blockquote>
-<p>for unit variable (size, width...)</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nv">--unit</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">header</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--unit</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a>
-<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--unit</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="p">}</span><span class="w"></span>
-</code></pre></div>
-<blockquote>
-<p>for color variable</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nv">--primary-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#333</span><span class="p">;</span><span class="w"></span>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">div</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--primary-color</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a>
-<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="p">.</span><span class="nc">test</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--primarycolor</span><span class="p">);</span><span class="w"></span>
-<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="p">}</span><span class="w"></span>
-</code></pre></div>
+</div>
 </article>
 </div>
 </div>
@@ -709,61 +890,12 @@
             Back to top
           </a>
 </main>
-<footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Basis" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Previous
-              </span>
-              Basis
-            </div>
-</div>
-</a>
-<a aria-label="Next: HTML" class="md-footer__link md-footer__link--next" href="../html/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              HTML
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-</div>
-</a>
-</nav>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
-<div class="md-copyright__highlight">
-      Copyright © 2022 - efxdesign / Laurent Marques
-    </div>
-</div>
-<div class="md-social">
-<a class="md-social__link" href="https://github.com/electroheadfx" rel="noopener" target="_blank" title="Github">
-<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-</a>
-<a class="md-social__link" href="laurent@efxdesign.fr" rel="noopener" target="_blank" title="My website">
-<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.1c0 2.8-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2-.9-3.3-.1-1.4-.8-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.09 0-40-17.9-40-40V360c0-.9.03-1.9.09-2.8v-69.6H32.05C14.02 287.6 0 273.5 0 255.5c0-9 3.004-17 10.01-24L266.4 8.016c7-7.014 15-8.016 22-8.016s15 2.004 21.1 7.014L564.8 231.5c8 7 12.1 15 11 24z"></path></svg>
-</a>
-<a class="md-social__link" href="mailto:&lt;laurent@efxdesign.fr&gt;" rel="noopener" target="_blank" title="Send me an email letting">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M501.6 4.186a24.105 24.105 0 0 0-25.44-1.063L12.12 267.1C4.184 271.7-.504 280.3.043 289.4c.547 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46 98.56 41.4a24.044 24.044 0 0 0 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094a23.936 23.936 0 0 0 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2 182.2 328.1 78.23 284.7 369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zm189.7-22.1-176.6-74.19 224.6-249.5-48 323.69z"></path></svg>
-</a>
-</div>
-</div>
-</div>
-</footer>
 </div>
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate", "navigation.tabs", "navigation.top", "header.autohide", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.js"></script>
+<script src="../../../overrides/assets/javascripts/bundle.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>

@@ -10,7 +10,7 @@
 <link href="https://electroheadfx.github.io/efxdev-docs/pages/basis/es6/" rel="canonical"/>
 <link href="../../../assets/favicon/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.3.9" name="generator"/>
-<title>ES Module - efxdev-docs</title>
+<title>Es6 - efxdev-docs</title>
 <link href="../../../assets/stylesheets/main.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v7.736a.75.75 0 1 0 1.5 0V1.75A1.75 1.75 0 0 0 11.25 0h-8.5A1.75 1.75 0 0 0 1 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 0 0 0-1.5H2.75a.25.25 0 0 1-.25-.25V1.75zM4.75 4a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5zM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75zm11.774 3.537a.75.75 0 0 0-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 0 0-1.062 1.058l1.943 1.95a.75.75 0 0 0 1.055.008l4.557-4.45z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm6.5-.25A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.489 4.489 0 0 1-.563-1.191 3.833 3.833 0 0 1-.05-2.063 4.636 4.636 0 0 1-2.025-.293.75.75 0 1 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.748.748 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.404 2.404 0 0 1-.507-.441 3.063 3.063 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.753.753 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768a85.08 85.08 0 0 0-.317-.265c-.814-.68-1.75-1.462-2.692-2.619a3.74 3.74 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 0 1 9 6.25c0 .177-.04.264-.077.318a.956.956 0 0 1-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 0 0-.313.195 2.416 2.416 0 0 0-.692.661.75.75 0 0 0 1.248.832.956.956 0 0 1 .276-.245 6.3 6.3 0 0 1 .26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 0 0 8 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 1 0 1.342.67z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575L6.457 1.047zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.25a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0v-2.5z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.561 1.5a.016.016 0 0 0-.01.004L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.02.02 0 0 0-.004-.009.02.02 0 0 0-.006-.006L10.56 1.5zM9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.492 3.492 0 0 1 2.441 0l.999-1a.75.75 0 1 1 1.06 1.061l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.013 5.013 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.684 1.684 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06zM6.173 5h3.654A.173.173 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173zM5.25 6.5a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75h-5.5z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H1.75zm4 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zm0 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5zM2.5 7.75a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6z"/></svg>');}</style>
@@ -49,7 +49,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              ES Module
+              Es6
             
           </span>
 </div>
@@ -117,18 +117,23 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../">
+<a class="md-tabs__link md-tabs__link--active" href="../">
         Basis
-      </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../tools/">
-        Tools
       </a>
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../advanced/">
         Advanced
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../react/">
+        React
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+        Tools
       </a>
 </li>
 </ul>
@@ -162,8 +167,8 @@
         Home
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../">Basis</a>
 <label for="__nav_2">
@@ -176,35 +181,156 @@
           Basis
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Es6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Es6
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../css/">
-        CSS
+<a class="md-nav__link" href="#es-module">
+    ES Module
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#template-literal">
+    Template literal
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#destructuring">
+    Destructuring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shortlang">
+    Shortlang
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arrow-function">
+    Arrow function
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nullish-coalishing">
+    Nullish coalishing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-chaining">
+    Optional chaining
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ternal-operator">
+    Ternal operator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#array-methods-in-es6">
+    Array methods in ES6
+  </a>
+<nav aria-label="Array methods in ES6" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exemple-with-filter-and-map">
+    Exemple with filter and map
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rest-parameters">
+    Rest parameters
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spread-operator">
+    Spread operator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promise-async-await">
+    Promise Async Await
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../events/">
+        Events in js
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../html/">
-        HTML
+        Modern HTML5
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_4">
-          Javascript
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Javascript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_4">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../css/">CSS</a>
+<label for="__nav_2_5">
 <span class="md-nav__icon md-icon"></span>
-          Javascript
+</label>
+</div>
+<nav aria-label="CSS" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          CSS
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../js-basics/">
+<a class="md-nav__link" href="../css/fundamentals/">
+        The fundamentals in CSS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../css/css-units/">
+        CSS Units
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../css/references/">
+        References
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../javascript/">javascript</a>
+<label for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="javascript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          javascript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../javascript/js-basics/">
         Javascript basics
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../js-loop/">
+<a class="md-nav__link" href="../javascript/js-loop/">
         Js loop
       </a>
 </li>
@@ -217,118 +343,27 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../tools/">Tools</a>
+<a href="../../advanced/">Advanced</a>
 <label for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="Tools" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
-          Tools
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../tools/docker/">Docker</a>
-<label for="__nav_3_2">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Docker" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_2">
-<span class="md-nav__icon md-icon"></span>
-          Docker
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-start/">
-        Docker Start
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-exercice1/">
-        Create a dockerfile/ex1
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/docker/docker-exercice2/">
-        Create a dockerfile/ex2
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/git/">
-        Git Master commands
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/node/">
-        Node
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../tools/static/">Static site</a>
-<label for="__nav_3_5">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Static site" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_5">
-<span class="md-nav__icon md-icon"></span>
-          Static site
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/static/docusaurus-create/">
-        Create doc with Docusaurus in GitLab Pages
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/static/mkdocs-material/">
-        Install mkdocs-material
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tools/services/">
-        Services
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/">Advanced</a>
-<label for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
 <nav aria-label="Advanced" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
           Advanced
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" id="__nav_4_2" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../advanced/javascript/">Javascript</a>
-<label for="__nav_4_2">
+<label for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
 <nav aria-label="Javascript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_2">
+<label class="md-nav__title" for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
           Javascript
         </label>
@@ -417,79 +452,15 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/typescript/">Typescript</a>
-<label for="__nav_4_3">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Typescript" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_3">
-<span class="md-nav__icon md-icon"></span>
-          Typescript
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/basis/">
-        Les bases de TS
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/advanced/">
-        TypeScript Avancé
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/classes/">
-        Class
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/typescript/react/">
-        Typescript with react
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../advanced/react/">React</a>
-<label for="__nav_4_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="React" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_4">
-<span class="md-nav__icon md-icon"></span>
-          React
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/react/react-fetching/">
-        Fetching in react
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../advanced/react/useRef-or-useState/">
-        useRef or useState
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../../advanced/remix/">Remix</a>
-<label for="__nav_4_5">
+<label for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
 <nav aria-label="Remix" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_5">
+<label class="md-nav__title" for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
           Remix
         </label>
@@ -510,6 +481,447 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/">React</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="React" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          React
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/react-fetching/">
+        Fetching in react
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/useRef-or-useState/">
+        useRef or useState
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/">Typescript</a>
+<label for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Typescript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Typescript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" id="__nav_4_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/advanced/">Advanced</a>
+<label for="__nav_4_4_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Advanced" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_2">
+<span class="md-nav__icon md-icon"></span>
+          Advanced
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/misc-concerns/">
+        Misc. Concerns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/patterns_by_usecase/">
+        Useful Patterns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/patterns_by_version/">
+        Useful Patterns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/types-react-ap/">
+        @types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/advanced/utility-types/">
+        Utility Types
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" id="__nav_4_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3">
+          Basic
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Basic" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Basic
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/editor-integration/">
+        Editor Tooling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/examples/">
+        Example App
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/linting/">
+        Linting
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/setup/">
+        Setup in React
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/useful-hooks/">
+        Useful Hooks
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_6" id="__nav_4_4_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_6">
+          Getting-started
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Getting-started" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_6">
+<span class="md-nav__icon md-icon"></span>
+          Getting-started
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/basic-type-examples/">
+        Typing with Props
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/class-components/">
+        Class Components
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/concurrent/">
+        Concurrent/Suspense
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/context/">
+        Context
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/default-props/">
+        Typing defaultProps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/error-boundaries/">
+        Error Boundaries
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/forms-and-events/">
+        Forms and Events
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/forward-create-ref/">
+        forwardRef/createRef
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/function-components/">
+        Function Components
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/hooks/">
+        Hooks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/getting-started/portals/">
+        Portals
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_7" id="__nav_4_4_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_7">
+          Recommended
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Recommended" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_7">
+<span class="md-nav__icon md-icon"></span>
+          Recommended
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/codebases/">
+        Recommended React
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/resources/">
+        TypeScript resources
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/recommended/talks/">
+        Talks
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3_8" id="__nav_4_4_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4_3_8">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Troubleshooting" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_4_3_8">
+<span class="md-nav__icon md-icon"></span>
+          Troubleshooting
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/learn-ts/">
+        Learn TypeScript
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/non-ts-files/">
+        Troubleshooting
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/official-typings-bugs/">
+        Fixing bugs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/operators/">
+        Troubleshooting: Operators
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/ts-config/">
+        Troubleshooting: tsconfig
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/types/">
+        Troubleshooting: Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/basic/troubleshooting/utilities/">
+        Troubleshooting: Utilities
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_4" id="__nav_4_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../react/typescript/hoc/">Hoc</a>
+<label for="__nav_4_4_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Hoc" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Hoc
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/excluding-props/">
+        Section 2: Excluding Props
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/full-example/">
+        Full HOC Example
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../react/typescript/hoc/react-hoc-docs/">
+        React HOC docs
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/">Tools</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/typescript/">Typescript</a>
+<label for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Typescript" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Typescript
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/start/">
+        TypeScript Start
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/advanced/">
+        TypeScript Avanced
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/conditional/">
+        Conditional type
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/classes/">
+        Class
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/typescript/introreact/">
+        Intro with react
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/docker/">Docker</a>
+<label for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Docker" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Docker
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-start/">
+        Docker Start
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice1/">
+        Create a dockerfile/ex1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/docker/docker-exercice2/">
+        Create a dockerfile/ex2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/git/">
+        Git Master commands
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/node/">
+        Node
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../tools/static/">Static site</a>
+<label for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Static site" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Static site
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/static/docusaurus-create/">
+        Create doc with Docusaurus in GitLab Pages
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/static/mkdocs-material/">
+        Install mkdocs-material
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tools/services/">
+        Services
+      </a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -519,6 +931,81 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#es-module">
+    ES Module
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#template-literal">
+    Template literal
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#destructuring">
+    Destructuring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shortlang">
+    Shortlang
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arrow-function">
+    Arrow function
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nullish-coalishing">
+    Nullish coalishing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-chaining">
+    Optional chaining
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ternal-operator">
+    Ternal operator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#array-methods-in-es6">
+    Array methods in ES6
+  </a>
+<nav aria-label="Array methods in ES6" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exemple-with-filter-and-map">
+    Exemple with filter and map
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rest-parameters">
+    Rest parameters
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spread-operator">
+    Spread operator
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promise-async-await">
+    Promise Async Await
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -528,7 +1015,8 @@
 <a class="md-content__button md-icon" href="https://github.com/electroheadfx/efxdev-docs/edit/master/docs/pages/basis/es6.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="es-module"># ES Module</h1>
+<h1>Es6</h1>
+<h3 id="es-module">ES Module</h3>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">//fichier /helper/math/simple-math.js</span><span class="w"></span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">somme</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="w"></span>
@@ -555,15 +1043,15 @@
 <a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">author</span><span class="p">)</span><span class="w"> </span><span class="c1">// return Euler</span><span class="w"></span>
 <a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">PI</span><span class="p">)</span><span class="w"> </span><span class="c1">// return 3.14</span><span class="w"></span>
 </code></pre></div>
-<h1 id="template-literal">Template literal</h1>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>let a = 5
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>let b = 10
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>const name = 'toto'
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>console.log(`Mon nom ${name} &amp; Quinze vaut ${a + b} etnon ${2 * a + b}.`)
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>// "Quinze vaut 15 et
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>// non 20."
+<h2 id="template-literal">Template literal</h2>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="w"></span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"></span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'toto'</span><span class="w"></span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Mon nom </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> &amp; Quinze vaut </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb"> etnon </span><span class="si">${</span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">.`</span><span class="p">)</span><span class="w"></span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1">// "Quinze vaut 15 et</span><span class="w"></span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="c1">// non 20."</span><span class="w"></span>
 </code></pre></div>
-<h1 id="destructuring">Destructuring</h1>
+<h2 id="destructuring">Destructuring</h2>
 <blockquote>
 <p>With <strong>Object</strong></p>
 </blockquote>
@@ -610,7 +1098,7 @@
 <a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">}</span><span class="w"></span>
 <a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="nx">showPersonne</span><span class="p">(</span><span class="nx">personne</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
-<h1 id="shortlang">Shortlang</h1>
+<h2 id="shortlang">Shortlang</h2>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">prenom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'codeur'</span><span class="w"></span>
 <a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'bali'</span><span class="w"></span>
 <a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ville</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'paris'</span><span class="w"></span>
@@ -619,7 +1107,7 @@
 <a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="c1">// do:</span><span class="w"></span>
 <a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">personne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">prenom</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">ville</span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<h1 id="arrow-function">Arrow function</h1>
+<h2 id="arrow-function">Arrow function</h2>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Fonctions fléchées - JavaScript | MDN</a>]</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">//fonctions classiques</span><span class="w"></span>
 <a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -641,19 +1129,19 @@
 <a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="w"></span>
 <a href="#__codelineno-7-19" id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<h1 id="nullish-coalishing">Nullish coalishing</h1>
+<h2 id="nullish-coalishing">Nullish coalishing</h2>
 <p>It allow to avoid js error with null or undefined data.</p>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator">Nullish coalescing operator Docs</a></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>function sayHello(name) {
-<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>  let nameSafe = name ?? 'anonyme'
-<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>  return `Bonjour ${nameSafe}`
-<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>}
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">nameSafe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="s1">'anonyme'</span><span class="w"></span>
+<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`Bonjour </span><span class="si">${</span><span class="nx">nameSafe</span><span class="si">}</span><span class="sb">`</span><span class="w"></span>
+<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="p">}</span><span class="w"></span>
 <a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>
-<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a>sayHello() // Bonjour anonyme
-<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a>sayHello(null) // Bonjour anonyme
-<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>sayHello('Mike') // Bonjour mike
+<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="nx">sayHello</span><span class="p">()</span><span class="w"> </span><span class="c1">// Bonjour anonyme</span><span class="w"></span>
+<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="nx">sayHello</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bonjour anonyme</span><span class="w"></span>
+<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="nx">sayHello</span><span class="p">(</span><span class="s1">'Mike'</span><span class="p">)</span><span class="w"> </span><span class="c1">// Bonjour mike</span><span class="w"></span>
 </code></pre></div>
-<h1 id="optional-chaining">Optional chaining</h1>
+<h2 id="optional-chaining">Optional chaining</h2>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Optional_chaining">Optional chaining Docs</a></p>
 <p>For using data in object we need to test them if it's not <em>undefined</em>:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">countryCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">personne</span><span class="p">.</span><span class="nx">adress</span><span class="p">.</span><span class="nx">country</span><span class="p">.</span><span class="nx">code</span><span class="w"></span>
@@ -671,7 +1159,7 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">countryCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">personne</span><span class="o">?</span><span class="p">.</span><span class="nx">adress</span><span class="o">?</span><span class="p">.</span><span class="nx">country</span><span class="o">?</span><span class="p">.</span><span class="nx">code</span><span class="w"></span>
 <a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="c1">// return the data or null without error</span><span class="w"></span>
 </code></pre></div>
-<h1 id="ternal-operator">Ternal operator</h1>
+<h2 id="ternal-operator">Ternal operator</h2>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">L'opérateur conditionnel Doc</a></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">//méthode classique</span><span class="w"></span>
 <a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">welcome</span><span class="p">(</span><span class="nx">isAdmin</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -686,7 +1174,7 @@
 <a href="#__codelineno-11-11" id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">isAdmin</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">'Hello Admin'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">'Hello Member'</span><span class="w"></span>
 <a href="#__codelineno-11-12" id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<h1 id="array-methods-in-es6">Array methods in ES6</h1>
+<h2 id="array-methods-in-es6">Array methods in ES6</h2>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/every">Array.prototype.every() - Docs</a></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">computers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">  </span><span class="p">{</span><span class="w"></span>
@@ -793,16 +1281,16 @@
 <a href="#__codelineno-20-5" id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">webCamPcName</span><span class="p">);</span><span class="w"></span>
 <a href="#__codelineno-20-6" id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="c1">// [show MacBook Pro, MSI]</span><span class="w"></span>
 </code></pre></div>
-<h1 id="rest-parameters">Rest parameters</h1>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>Math.min(100, 10, 1) // retoune 1
+<h2 id="rest-parameters">Rest parameters</h2>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="c1">// retoune 1</span><span class="w"></span>
 <a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a>
-<a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a>const arr = [5, 6, 8, 4, 9]
-<a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a>Math.min(arr[0], arr[1], arr[2], arr[3], arr[4])
+<a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mf">3</span><span class="p">],</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mf">4</span><span class="p">])</span><span class="w"></span>
 <a href="#__codelineno-21-5" id="__codelineno-21-5" name="__codelineno-21-5"></a>
-<a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a>// Same thing with with Rest
-<a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a>Math.min(...arr)
+<a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="c1">// Same thing with with Rest</span><span class="w"></span>
+<a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
-<h1 id="spread-operator">Spread operator</h1>
+<h2 id="spread-operator">Spread operator</h2>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="c1">// spread with object</span><span class="w"></span>
 <a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">personne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'mike'</span><span class="p">,</span><span class="w"> </span><span class="nx">prenom</span><span class="o">:</span><span class="w"> </span><span class="s1">'codeur'</span><span class="p">,</span><span class="w"> </span><span class="nx">adresse</span><span class="o">:</span><span class="w"> </span><span class="s1">'bali'</span><span class="p">}</span><span class="w"></span>
 <a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">personne2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...</span><span class="nx">personne</span><span class="p">,</span><span class="w"> </span><span class="nx">rue</span><span class="o">:</span><span class="w"> </span><span class="mf">17</span><span class="p">}</span><span class="w"></span>
@@ -812,7 +1300,7 @@
 <a href="#__codelineno-22-7" id="__codelineno-22-7" name="__codelineno-22-7"></a><span class="kd">let</span><span class="w"> </span><span class="nx">newNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12</span><span class="p">;</span><span class="w"></span>
 <a href="#__codelineno-22-8" id="__codelineno-22-8" name="__codelineno-22-8"></a><span class="nx">numberStore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">numberStore</span><span class="p">,</span><span class="w"> </span><span class="nx">newNumber</span><span class="p">];</span><span class="w"></span>
 </code></pre></div>
-<h1 id="promise-async-await">Promise Async Await</h1>
+<h2 id="promise-async-await">Promise Async Await</h2>
 <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise - JavaScript | MDN</a></p>
 <blockquote>
 <p>Voir le cours plus évolué dans advanced <code>async-await</code> et <code>callback</code></p>
@@ -879,6 +1367,34 @@
           </a>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Basis" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Basis
+            </div>
+</div>
+</a>
+<a aria-label="Next: Events in js" class="md-footer__link md-footer__link--next" href="../events/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Events in js
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">

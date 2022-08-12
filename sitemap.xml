@@ -2,262 +2,472 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/demo/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/async-await/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/callback/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/class/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/closures/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/currying/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/es6-utilities/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/generator/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/iterator/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/map/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/promise/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/reduce-cases/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/set/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/setinterval/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/this-examples/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/this/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/javascript/timeout/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/react/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/react/react-fetching/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/react/useRef-or-useState/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/remix/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/remix/discord-discussions/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/remix/remix-fly/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/typescript/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/typescript/advanced/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/typescript/basis/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/typescript/classes/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/advanced/typescript/react/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/</loc>
-         <lastmod>2022-07-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/es6/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/events/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/html/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/js-basics/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/</loc>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/js-loop/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/css-units/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/fundamentals/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/css/references/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/javascript/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/javascript/js-basics/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/basis/javascript/js-loop/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/react-fetching/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/useRef-or-useState/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/misc-concerns/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/patterns_by_usecase/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/patterns_by_version/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/types-react-ap/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/advanced/utility-types/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/editor-integration/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/examples/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/linting/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/setup/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/useful-hooks/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/basic-type-examples/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/class-components/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/concurrent/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/context/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/default-props/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/error-boundaries/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/forms-and-events/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/forward-create-ref/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/function-components/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/hooks/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/getting-started/portals/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/recommended/codebases/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/recommended/resources/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/recommended/talks/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/learn-ts/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/non-ts-files/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/official-typings-bugs/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/operators/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/ts-config/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/types/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/basic/troubleshooting/utilities/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/hoc/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/hoc/excluding-props/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/hoc/full-example/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/react/typescript/hoc/react-hoc-docs/</loc>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css-reset/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css/shruti-balasa/css-animation-line-hover/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tips/css/shruti-balasa/display-contents-in-CSS-rule/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/git/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/node/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/services/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/docker/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/docker/docker-exercice1/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/docker/docker-exercice2/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/docker/docker-start/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/static/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/static/docusaurus-create/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/static/mkdocs-material/</loc>
-         <lastmod>2022-07-30</lastmod>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/advanced/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/classes/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/conditional/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/introreact/</loc>
+         <lastmod>2022-08-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://electroheadfx.github.io/efxdev-docs/pages/tools/typescript/start/</loc>
+         <lastmod>2022-08-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
