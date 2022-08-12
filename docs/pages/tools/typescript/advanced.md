@@ -1,4 +1,4 @@
-# TypeScript Avancé
+# TypeScript Avanced
 
 ### Type et Interface
 

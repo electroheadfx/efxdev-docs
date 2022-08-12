@@ -5,6 +5,6 @@ tags:
 hide:
   - toc
 title: Typescript
-menu: advanced
+menu: tools
 section: typescript
 ---

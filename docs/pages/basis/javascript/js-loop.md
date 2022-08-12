@@ -34,9 +34,11 @@ list.forEach( (id) => {
 })
 ```
 
-## Bonus with promise
+!!! alert
 
-### Promise with for..of
+    Bonus with promise ! **difference between** `for..of` AND `forEach`/`map`/`for`
+
+## Promise with `for..of`
 > Ouput the user ID with 1000 ms delay one per one
 
 ```js
@@ -68,7 +70,7 @@ const getUserID = (id) => {
 // 'Got user ID 1'  >1000 ms
 ```
 
-### Promise with forEach, map or for
+## Promise with `forEach`, `map` or `for`
 
 ```js
 // with forEach, map, for, it run in parrallels

@@ -2,7 +2,7 @@
 
 ## Remix Catch boundary
 
-```tsx
+```ts
 import type { LoaderFunction } from 'remix'
 
 export const loader: LoaderFunction = function () {
@@ -40,7 +40,7 @@ export default function () {}
 
 - and I have a LinksFunction,. rendering a preload link which will also preload the image
 
-```tsx
+```ts
 {
   rel: "preload",
   as: "image",
@@ -59,7 +59,7 @@ export default function () {}
 
 - something like that, but with more links :
 
-```tsx
+```ts
 // it preload heroBg4x image from header
 
 export let links: LinksFunction = () => {

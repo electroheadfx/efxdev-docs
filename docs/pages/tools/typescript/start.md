@@ -1,6 +1,6 @@
-# Les bases de TS
+# TypeScript Start
 
-## 1-Les types de base
+## 1-Types
 
 ```ts
 let str = "str"
@@ -22,9 +22,9 @@ console.log(conversion(50));
 version(50));
 ```
 
-## 2- Les Tableaux  et les Objets
+## 2- Array and Object
 
-> **Les tableaux**
+> **Array**
 
 ```ts
 const fruits = ['fraise', 'pomme']
@@ -44,7 +44,7 @@ let random : any [];
 random = [true, false, true]
 ```
 
-> **Les Objets**
+> **Object**
 
 ```ts
 const car = {
@@ -84,7 +84,7 @@ let obj: object;
 obj = {name: "Enzo"}
 ```
 
-## 3- Les Fonctions
+## 3- Functions
 
 ```ts
 function multiply(num1 : number, num2 = 10, action?: string)   {
@@ -118,9 +118,9 @@ function printToConsole(msg: string) {
 greetings(printToConsole)
 ```
 
-## 4- Les Unions et les custom types
+## 4- Union and custom types
 
-> **Les Unions**
+> **Unions**
 
 ```ts
 let code : string | number | boolean | object | Function;
@@ -135,7 +135,7 @@ const foo = (param: number|string) => {
 foo('Test')
 ```
 
-> **Les Types Perso**
+> **Custom types**
 
 ```ts
 type mixedNumStr = number | string;
@@ -161,7 +161,7 @@ const button : element = {
 }
 ```
 
-## 5- Tuple et Enum
+## 5- Tuple and Enum
 
 > Tuple
 
@@ -226,7 +226,7 @@ console.log(Falcon1);
 Falcon1.takeOff('Décollage')
 ```
 
-## 7- Le DOM
+## 7- DOM
 
 > **Type Assertion**
 

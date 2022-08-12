@@ -1,4 +1,4 @@
-# Typescript with react
+# Intro with react
 
 ## app.tsx
 

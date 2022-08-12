@@ -1,6 +1,6 @@
 # Javascript basics
 
-#### `html` DOM creation
+## `html` DOM creation
 
 > create HTML elements and element content
 
@@ -46,7 +46,7 @@
 > </html>
 > ```
 
-#### `for` loop in array<sup>*</sup>
+## `for` loop in array<sup>*</sup>
 
 ```js
 var langageList = ['html', 'css', 'js']
@@ -57,7 +57,7 @@ for (var i = 0; i < langageList.length; i++) {
 
 > *we use ES6 functionnal programming now with map, find, filter ...
 
-#### `Splice` for array
+## `Splice` for array
 
 ```js
 // remove last element in array
@@ -66,7 +66,7 @@ langageList.splice(langageList.length - 1)
 
 - [Mozilla splice Docs]([JavaScript Array splice() Method](https://www.w3schools.com/jsref/jsref_splice.asp)
 
-#### `Object` Docs
+## `Object` Docs
 
 - [JavaScript Objects Docs](https://www.w3schools.com/js/js_objects.asp)
 
@@ -78,7 +78,7 @@ for (var key in personne) {
 }
 ```
 
-#### `include` test an array inside object
+## `include` test an array inside object
 
 ```js
 var personne = {
@@ -93,7 +93,7 @@ if (personne.langages.includes('js')) {
 }
 ```
 
-# Pop, Push, Shift and Unshift Array Methods in JavaScript
+## Array Methods in JavaScript
 
 JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 

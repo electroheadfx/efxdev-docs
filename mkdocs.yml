@@ -49,8 +49,7 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
-  - pymdownx.tilde
-  
+  - pymdownx.tilde  
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -144,13 +143,22 @@ extra:
         css: fontawesome/brands-css3-alt
         es6: fontawesome/solid-6
         events: material-television-ambient-light
-        html: fontawesome/brands-html5
         js: fontawesome/brands-js
+        html: fontawesome/brands-html5
+    React:
+      index:
+        typescript: material-language-typescript
+        react-fetching: fontawesome/solid-crutch
+        useRef-or-useState: material-state-machine
+      typescript:
+        advanced: material-react
+        basic: material-react
+        hoc: material-react
     advanced:
       index:
         javascript: material-language-javascript
-        Typescript: material-language-typescript
         react: material-react
+        remix: material-react
       javascript:
         async-await: fontawesome/solid-6
         callback: material-seat-legroom-reduced
@@ -168,46 +176,39 @@ extra:
         this: material-human-handsup
         this-examples: material-text-box-search-outline
         timeout: material-timer-cog-outline
-      typescript:
-        basis: fontawesome/brands-microblog
-        advanced: fontawesome/brands-adversal
-        classes: material-sync
-        react: material-react
-      react:
-        react-fetching: fontawesome/solid-crutch
-        useRef-or-useState: material-state-machine
 
     tools:
       index:
+        typescript: material-language-typescript
         docker: fontawesome/brands-docker
         git: material-git
         node: material-nodejs
         services: material-room-service
+      typescript:
+        start: fontawesome/brands-microblog
+        advanced: fontawesome/brands-adversal
+        conditional: material-air-conditioner
+        classes: material-sync
+        react: material-react
 
 # Page tree
 nav:
   - Home: /efxdev-docs/
   - Basis:
     - pages/basis/index.md
-    - CSS: pages/basis/css.md
-    - HTML: pages/basis/html.md
-    - Javascript:
-      - pages/basis/js-basics.md
-      - pages/basis/js-loop.md
-  - Tools:
-    - pages/tools/index.md
-    - Docker:
-      - pages/tools/docker/index.md
-      - pages/tools/docker/docker-start.md
-      - pages/tools/docker/docker-exercice1.md
-      - pages/tools/docker/docker-exercice2.md
-    - pages/tools/git.md
-    - pages/tools/node.md
-    - Static site:
-      - pages/tools/static/index.md
-      - pages/tools/static/docusaurus-create.md
-      - pages/tools/static/mkdocs-material.md
-    - pages/tools/services.md
+    - pages/basis/es6.md
+    - pages/basis/events.md
+    - pages/basis/html.md
+    - CSS:
+      - pages/basis/css/index.md
+      - pages/basis/css/fundamentals.md
+      - pages/basis/css/css-units.md
+      - pages/basis/css/references.md
+    - javascript:
+      - pages/basis/javascript/index.md
+      - pages/basis/javascript/js-basics.md
+      - pages/basis/javascript/js-loop.md
+
   - Advanced:
     - pages/advanced/index.md
     - Javascript:
@@ -228,20 +229,82 @@ nav:
       - pages/advanced/javascript/this.md
       - pages/advanced/javascript/this-examples.md
       - pages/advanced/javascript/timeout.md
-    - Typescript:
-      - pages/advanced/typescript/index.md
-      - pages/advanced/typescript/basis.md
-      - pages/advanced/typescript/advanced.md
-      - pages/advanced/typescript/classes.md
-      - pages/advanced/typescript/react.md
-    - React:
-      - pages/advanced/react/index.md
-      - pages/advanced/react/react-fetching.md
-      - pages/advanced/react/useRef-or-useState.md
     - Remix:
       - pages/advanced/remix/index.md
       - pages/advanced/remix/remix-fly.md
       - pages/advanced/remix/discord-discussions.md
+
+  - React:
+    - pages/react/index.md
+    - pages/react/react-fetching.md
+    - pages/react/useRef-or-useState.md
+    - Typescript:
+      - pages/react/typescript/index.md
+      - Advanced:
+        - pages/react/typescript/advanced/index.md
+        - pages/react/typescript/advanced/misc-concerns.md
+        - pages/react/typescript/advanced/patterns_by_usecase.md
+        - pages/react/typescript/advanced/patterns_by_version.md
+        - pages/react/typescript/advanced/types-react-ap.md
+        - pages/react/typescript/advanced/utility-types.md
+      - Basic:
+        - pages/react/typescript/basic/editor-integration.md
+        - pages/react/typescript/basic/examples.md
+        - pages/react/typescript/basic/linting.md
+        - pages/react/typescript/basic/setup.md
+        - pages/react/typescript/basic/useful-hooks.md
+        - Getting-started:
+          - pages/react/typescript/basic/getting-started/basic-type-examples.md
+          - pages/react/typescript/basic/getting-started/class-components.md
+          - pages/react/typescript/basic/getting-started/concurrent.md
+          - pages/react/typescript/basic/getting-started/context.md
+          - pages/react/typescript/basic/getting-started/default-props.md
+          - pages/react/typescript/basic/getting-started/error-boundaries.md
+          - pages/react/typescript/basic/getting-started/forms-and-events.md
+          - pages/react/typescript/basic/getting-started/forward-create-ref.md
+          - pages/react/typescript/basic/getting-started/function-components.md
+          - pages/react/typescript/basic/getting-started/hooks.md
+          - pages/react/typescript/basic/getting-started/portals.md
+        - Recommended:
+          - pages/react/typescript/basic/recommended/codebases.md
+          - pages/react/typescript/basic/recommended/resources.md
+          - pages/react/typescript/basic/recommended/talks.md
+        - Troubleshooting:
+          - pages/react/typescript/basic/troubleshooting/learn-ts.md
+          - pages/react/typescript/basic/troubleshooting/non-ts-files.md
+          - pages/react/typescript/basic/troubleshooting/official-typings-bugs.md
+          - pages/react/typescript/basic/troubleshooting/operators.md
+          - pages/react/typescript/basic/troubleshooting/ts-config.md
+          - pages/react/typescript/basic/troubleshooting/types.md
+          - pages/react/typescript/basic/troubleshooting/utilities.md
+      - Hoc:
+        - pages/react/typescript/hoc/index.md
+        - pages/react/typescript/hoc/excluding-props.md
+        - pages/react/typescript/hoc/full-example.md
+        - pages/react/typescript/hoc/react-hoc-docs.md
+
+  - Tools:
+    - pages/tools/index.md
+    - Typescript:
+      - pages/tools/typescript/index.md
+      - pages/tools/typescript/start.md
+      - pages/tools/typescript/advanced.md
+      - pages/tools/typescript/conditional.md
+      - pages/tools/typescript/classes.md
+      - pages/tools/typescript/introreact.md
+
+    - Docker:
+      - pages/tools/docker/index.md
+      - pages/tools/docker/docker-start.md
+      - pages/tools/docker/docker-exercice1.md
+      - pages/tools/docker/docker-exercice2.md
+    - pages/tools/git.md
+    - pages/tools/node.md
+    - Static site:
+      - pages/tools/static/index.md
+      - pages/tools/static/docusaurus-create.md
+      - pages/tools/static/mkdocs-material.md
+    - pages/tools/services.md
 
   # - Home: index.md
   # - Getting started:

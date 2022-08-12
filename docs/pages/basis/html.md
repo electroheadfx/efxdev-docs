@@ -14,7 +14,7 @@ Use tag validation (type, min, max ...) with **required** if data is required.
 
 Use it for data-validation in form :
 
-<img title="" src="html5-form-data-validation.png" alt="html5-form-data-validation.png" width="344">
+![HTML5 Form Data Validation](html/html5-form-data-validation.png)
 
 #### Input form with js
 
@@ -32,31 +32,18 @@ Use form with javascript for trigger input element.
 
 use OG meta for your social media SEO
 
-<img title="" src="open-graph-social.png" alt="open-graph-social.png" width="362">
+![open graph social](html/open-graph-social.png)
 
 ```html
 <html xmlns:og="http://ogp.me/ns#">
-
-<head>
-
-<title>Open Graph : pourquoi utiliser les balises OGP ?</title>
-
-<meta property="og:title" content="Article sur l'Open Graph par Referenseo" />
-
-<meta property="og:type" content="article" />
-
-<meta property="og:url" content="http://www.yakaferci.com/open-graph/" />
-
-<meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
-
-<meta property="og:site_name" content="Agence de référencement Referenseo" />
-
-...
-
-</head>
-
-...
-
+    <head>
+        <title>Open Graph : pourquoi utiliser les balises OGP ?</title>
+        <meta property="og:title" content="Article sur l'Open Graph par Referenseo" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.yakaferci.com/open-graph/" />
+        <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+        <meta property="og:site_name" content="Agence de référencement Referenseo" />
+    </head>
 </html>
 ```
 
@@ -66,7 +53,7 @@ use OG meta for your social media SEO
 
 use Semantic HTML5 element instead of div.
 
-<img title="" src="semantic-tags-in-html.png" alt="semantic-tags-in-html.png" width="375">
+![semantic tags in html](html/semantic-tags-in-html.png)
 
 ## Performance
 
@@ -82,12 +69,12 @@ Le content visibility increase your css performance loading !
 
 Instead to put script below body for HTML loading, use *async* or *defer*
 
-<img title="" src="performance-async-defer-2.png" alt="performance-async-defer-2.png" width="386">
+![performance-async-defer-2](html/performance-async-defer-2.png)
 
 # Web component
 
-<img title="" src="webcomposants.png" alt="webcomposants.png" width="261">
+![webcomposants](html/webcomposants.png)
 
 # Shadow DOM
 
-<img title="" src="shadow-dom.png" alt="shadow-dom.png" width="433">
+![shadow dom](html/shadow-dom.png)

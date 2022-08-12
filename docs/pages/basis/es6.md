@@ -1,4 +1,4 @@
-# # ES Module
+### ES Module
 
 ```js
 //fichier /helper/math/simple-math.js
@@ -30,9 +30,9 @@ console.log(author) // return Euler
 console.log(PI) // return 3.14
 ```
 
-# Template literal
+## Template literal
 
-```jsx
+```ts
 let a = 5
 let b = 10
 const name = 'toto'
@@ -41,7 +41,7 @@ console.log(`Mon nom ${name} & Quinze vaut ${a + b} etnon ${2 * a + b}.`)
 // non 20."
 ```
 
-# Destructuring
+## Destructuring
 
 > With **Object**
 
@@ -92,7 +92,7 @@ const showPersonne = ({nom, prenom, age, ville}) => {
 showPersonne(personne)
 ```
 
-# Shortlang
+## Shortlang
 
 ```js
 const prenom = 'codeur'
@@ -104,7 +104,7 @@ const personne = {prenom: prenom, age: age, ville: ville}
 const personne = {prenom, age, ville}
 ```
 
-# Arrow function
+## Arrow function
 
 [Fonctions fléchées - JavaScript | MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions)]
 
@@ -130,13 +130,13 @@ const somme = (a, b) => {
 }
 ```
 
-# Nullish coalishing
+## Nullish coalishing
 
 It allow to avoid js error with null or undefined data.
 
 [Nullish coalescing operator Docs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
 
-```jsx
+```ts
 function sayHello(name) {
   let nameSafe = name ?? 'anonyme'
   return `Bonjour ${nameSafe}`
@@ -147,7 +147,7 @@ sayHello(null) // Bonjour anonyme
 sayHello('Mike') // Bonjour mike
 ```
 
-# Optional chaining
+## Optional chaining
 
 [Optional chaining Docs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 
@@ -173,7 +173,7 @@ const countryCode = personne?.adress?.country?.code
 // return the data or null without error
 ```
 
-# Ternal operator
+## Ternal operator
 
 [L'opérateur conditionnel Doc](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
@@ -192,7 +192,7 @@ function welcome(isAdmin) {
 }
 ```
 
-# Array methods in ES6
+## Array methods in ES6
 
 [Array.prototype.every() - Docs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
@@ -316,9 +316,9 @@ console.log(webCamPcName);
 // [show MacBook Pro, MSI]
 ```
 
-# Rest parameters
+## Rest parameters
 
-```jsx
+```ts
 Math.min(100, 10, 1) // retoune 1
 
 const arr = [5, 6, 8, 4, 9]
@@ -328,7 +328,7 @@ Math.min(arr[0], arr[1], arr[2], arr[3], arr[4])
 Math.min(...arr)
 ```
 
-# Spread operator
+## Spread operator
 
 ```js
 // spread with object
@@ -341,7 +341,7 @@ let newNumber = 12;
 numberStore = [...numberStore, newNumber];
 ```
 
-# Promise Async Await
+## Promise Async Await
 
 [Promise - JavaScript | MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
