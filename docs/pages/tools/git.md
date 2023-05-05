@@ -335,3 +335,35 @@ git subtree push --prefix $1 origin gh-pages
 ```bash
 git gh-deploy path/to/your/site
 ```
+
+## Rebase from your branch
+
+-  Store your work in a stash
+```bash
+$ git stash
+```
+- Get the pull from master and make in your branch udpated
+```bash
+$ git pull --rebase origin master
+```
+
+- Apply update of your branch from the last stash
+```bash
+$ git stash apply
+```
+> if conflicts, fix them
+
+- Add and commit your final code
+```bash
+$ git add . && git commit
+```
+
+## update submodules
+```bash
+$ git submodule update --init --recursive --remote
+```
+
+## change last message commit
+```
+$ git commit --amend
+```
