@@ -139,3 +139,7 @@ myMap.set(keyFunc, 'Function key value');
 * Map is an iterable so it can directly be iterated
 
 * Iterating over an Object however requires obtaining its keys in some fashion and then iterating over them.
+
+### Links
+
+[Theo Map VS Object Video](https://www.youtube.com/watch?v=hRSwSAr-gok)
